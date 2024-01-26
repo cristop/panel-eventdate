@@ -37,6 +37,9 @@ form input::placeholder{
     font-size: 15px;
 }
 
+#form{
+    width: 450px;
+}
 
 .row > :first-child{
     border-top-right-radius: 200px;
@@ -48,5 +51,6 @@ form input::placeholder{
     }
     #form{
         padding: 1.5rem!important;
+        width: 100%;
     }
 }

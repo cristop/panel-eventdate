@@ -38,7 +38,7 @@ form input::placeholder{
 }
 
 #form{
-    max-width: 400px;
+    width: 400px;
 }
 
 .row > :first-child{
@@ -51,5 +51,6 @@ form input::placeholder{
     }
     #form{
         padding: 1.5rem!important;
+        width: 100%;
     }
 }
