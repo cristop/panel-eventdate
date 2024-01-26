@@ -1,1 +1,20 @@
 @import "_custom.css";
+
+:root{
+    --c-primary: #7FC6BA;
+}
+
+.sidebar{
+    border-radius: 0px 35px 35px 0;
+    padding-top: 40px;
+}
+
+.c-primary{
+    color: var(--c-primary) !important;
+}
+.bg-primary{
+    background-color: var(--c-primary) !important;
+}
+.border-primary{
+    border-color: var(--c-primary) !important;
+}
