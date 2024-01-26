@@ -1,0 +1,33 @@
+@import "_custom.css";
+
+body {
+  color: var(--dark);
+  overflow-x: hidden !important;
+  width: 100vw;
+  touch-action: pan-y;
+}
+
+img {
+  max-width: 100%;
+}
+
+.text-dark{
+    color: var(--dark);
+}
+
+.bg-dark-light {
+  background-color: #212121;
+}
+
+.bg-white {
+  background-color: #ffffff !important;
+}
+
+.btn-primary {
+  background-color: #7fc6ba !important;
+  border-color: #7fc6ba !important;
+}
+
+.form {
+  background-color: #ffffff !important;
+}
