@@ -2,6 +2,12 @@
 
 :root{
     --c-primary: #7FC6BA;
+    --c-secondary: #F1B20A;
+    --gray-light: #F6F6F6;
+}
+
+body{
+    background-color: var(--gray-light);
 }
 
 .sidebar{
@@ -12,9 +18,56 @@
 .c-primary{
     color: var(--c-primary) !important;
 }
+
 .bg-primary{
     background-color: var(--c-primary) !important;
 }
+
 .border-primary{
     border-color: var(--c-primary) !important;
+}
+
+.c-secondary{
+    color: var(--c-secondary) !important;
+}
+
+.bg-secondary{
+    background-color: var(--c-secondary) !important;
+}
+
+.border-secondary{
+    border-color: var(--c-secondary) !important;
+}
+
+.bg-gray-light{
+    background-color: var(--gray-light) !important;
+}
+
+.logo{
+    max-width: 180px;
+}
+
+.image-bg{
+    background-repeat: no-repeat;
+    background-position: left 117%;
+    background-size: 100%;
+}
+
+.templates{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 25px 15px;
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width: 900px) {
+    .templates{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .templates{
+        grid-template-columns: repeat(1,1fr);
+    }
 }
