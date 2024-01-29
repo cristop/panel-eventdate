@@ -8,6 +8,7 @@
 
 body{
     background-color: var(--gray-light);
+    min-height: 100vh;
 }
 
 .sidebar{
@@ -94,6 +95,18 @@ body{
 
 .navbar{
     display: none;
+}
+
+.panel-prev{
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 0 0px 15px 15px;
+    padding: 12px 25px;
+}
+
+.modal-header,
+.modal-footer{
+    border: 0 !important;
 }
 
 @media screen and (max-width: 900px) {
