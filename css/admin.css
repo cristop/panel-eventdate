@@ -100,8 +100,9 @@ body{
     padding: 12px 25px;
 }
 
-.modal-header{
-    border-bottom: 0 !important;
+.modal-header,
+.modal-footer{
+    border: 0 !important;
 }
 
 @media screen and (max-width: 900px) {
