@@ -8,6 +8,7 @@
 
 body{
     background-color: var(--gray-light);
+    min-height: 100vh;
 }
 
 .sidebar{
@@ -90,6 +91,13 @@ body{
 
 .individual-invitation{
     height: calc(100% - 30px);
+}
+
+.panel-prev{
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 0 0px 15px 15px;
+    padding: 12px 25px;
 }
 
 @media screen and (max-width: 900px) {

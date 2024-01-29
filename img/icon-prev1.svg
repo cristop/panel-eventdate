@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41">
+  <g id="Grupo_128" data-name="Grupo 128" transform="translate(0.227 0.386)">
+    <rect id="Rectángulo_32" data-name="Rectángulo 32" width="41" height="41" rx="10" transform="translate(-0.227 -0.386)" fill="#404040"/>
+    <g id="Icon_feather-tablet" data-name="Icon feather-tablet" transform="translate(10.773 8.614)">
+      <path id="Trazado_30" data-name="Trazado 30" d="M8.379,3H22.65a2.379,2.379,0,0,1,2.379,2.379V24.407a2.379,2.379,0,0,1-2.379,2.379H8.379A2.379,2.379,0,0,1,6,24.407V5.379A2.379,2.379,0,0,1,8.379,3Z" transform="translate(-6 -3)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="Trazado_31" data-name="Trazado 31" d="M18,27h.012" transform="translate(-8.486 -7.972)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    </g>
+  </g>
+</svg>

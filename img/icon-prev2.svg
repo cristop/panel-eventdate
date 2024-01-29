@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="41" viewBox="0 0 40 41">
+  <g id="Grupo_130" data-name="Grupo 130" transform="translate(0.182 0.386)">
+    <rect id="Rectángulo_30" data-name="Rectángulo 30" width="40" height="41" rx="10" transform="translate(-0.182 -0.386)" fill="#404040"/>
+    <g id="Icon_ion-phone-portrait-outline" data-name="Icon ion-phone-portrait-outline" transform="translate(12.819 6.614)">
+      <path id="Trazado_28" data-name="Trazado 28" d="M11.619,1.125h8.729a2.619,2.619,0,0,1,2.619,2.619V24.693a2.619,2.619,0,0,1-2.619,2.619H11.619A2.619,2.619,0,0,1,9,24.693V3.744a2.619,2.619,0,0,1,2.619-2.619Z" transform="translate(-9 -1.125)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="Trazado_29" data-name="Trazado 29" d="M12.375,1.125h1.249a.446.446,0,0,1,.416.47h0a.891.891,0,0,0,.833.94h3.332a.891.891,0,0,0,.833-.94h0a.446.446,0,0,1,.416-.47H20.7" transform="translate(-9.556 -1.125)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    </g>
+  </g>
+</svg>
