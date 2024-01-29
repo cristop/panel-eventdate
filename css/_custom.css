@@ -2,6 +2,9 @@
 
 body{
 	font-family: 'Raleway', sans-serif;
+	overflow-x: hidden !important;
+    width: 100vw;
+    touch-action: pan-y;
 }
 
 a, a:hover, a:active, a:focus, a:visited {
