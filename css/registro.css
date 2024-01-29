@@ -2,9 +2,6 @@
 
 body {
   color: #212121;
-  overflow-x: hidden !important;
-  width: 100vw;
-  touch-action: pan-y;
 }
 
 img {
@@ -48,7 +45,6 @@ h1{
     max-width: 450px;
 }
 
-
 .row > :first-child{
     position: relative;
 }
@@ -68,6 +64,9 @@ h1{
         z-index: 3;
         position: relative;
         box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.3);
+    }
+    #form input::placeholder{
+        font-size: 12px;
     }
     .column-right{
         display: none!important;
