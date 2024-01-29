@@ -92,14 +92,45 @@ body{
     height: calc(100% - 30px);
 }
 
+.navbar{
+    display: none;
+}
+
 @media screen and (max-width: 900px) {
     .templates{
         grid-template-columns: repeat(2,1fr);
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px){
     .templates{
         grid-template-columns: repeat(1,1fr);
     }
+    .bg-black.sidebar, .search, .top-text .actions{
+        display: none!important;
+    }
+    .navbar{
+        display: block;
+    }
+    .navbar button.navbar-toggler{
+        border: none;
+    }
+    .top-text{
+        align-items: center!important;
+    }
+    .image-bg{
+        background-size: auto;
+        background-position: right 117%;
+        min-height: 100vh;
+    }
+    .header-invitation{
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+
 }
