@@ -130,36 +130,6 @@ body{
     display: none;
 }
 
-.buttons-invitation a{
-	position: relative;
-}
-.buttons-invitation a:hover,
-.buttons-invitation a.active{
-	font-weight: 600;	
-}
-.buttons-invitation a:before{
-	content: "";
-	display: block;
-	position: absolute;
-	width: 6px;
-	height: 0%;
-	background-color: var(--c-primary);
-	right: -16px;
-	top: 50%;
-	transform: translateY(-50%);
-	opacity: 0;
-	-webkit-transition: all 0.2s ease;  
-	-moz-transition: all 0.2s ease;
-    -ms-transition: all 0.2s ease;  
-	-o-transition: all 0.2s ease;
-	transition: all 0.2s ease;
-}
-.buttons-invitation a:hover:before,
-.buttons-invitation a.active:before{
-	height: 100%;
-	opacity: 1;
-}
-
 @media screen and (max-width: 900px) {
     .templates{
         grid-template-columns: repeat(2,1fr);
@@ -201,7 +171,7 @@ body{
         height: 350px;    
     }
     .template-details{
-        box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.3);
+        box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.02);
     }
     .template-details .model{
         background-color: var(--gray-light) !important;
@@ -241,7 +211,22 @@ body{
     .invitation span.navbar-toggler-icon.c-white{
         filter: brightness(0) invert(1);
     }
-
+    .list .search,  .list .search form{
+        display: block!important;
+    }
+    .list .search, .make{
+        width: 100%!important;
+        margin-right: 0px!important;
+        justify-content: center;
+        padding: 1.5rem!important;
+    }
+    .list .search form > div{
+        margin-bottom: 10px;
+    }
+    .list .row{
+        padding: 0px 50px;
+        justify-content: center;
+    }
 }
 
 @media screen and (max-width: 400px) {
