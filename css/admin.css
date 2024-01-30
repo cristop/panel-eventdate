@@ -3,7 +3,16 @@
 :root{
     --c-primary: #7FC6BA;
     --c-secondary: #F1B20A;
+	--gray: #707070;
     --gray-light: #F6F6F6;
+}
+
+a{
+	-webkit-transition: all 0.2s ease;  
+	-moz-transition: all 0.2s ease;
+	-ms-transition: all 0.2s ease;  
+	-o-transition: all 0.2s ease;
+	transition: all 0.2s ease;
 }
 
 body{
@@ -42,6 +51,14 @@ body{
 
 .bg-gray-light{
     background-color: var(--gray-light) !important;
+}
+
+.c-gray{
+    color: var(--gray) !important;
+}
+
+.bg-gray{
+    background-color: var(--gray) !important;
 }
 
 .logo{
@@ -111,6 +128,36 @@ body{
 
 .navbar{
     display: none;
+}
+
+.buttons-invitation a{
+	position: relative;
+}
+.buttons-invitation a:hover,
+.buttons-invitation a.active{
+	font-weight: 600;	
+}
+.buttons-invitation a:before{
+	content: "";
+	display: block;
+	position: absolute;
+	width: 6px;
+	height: 0%;
+	background-color: var(--c-primary);
+	right: -16px;
+	top: 50%;
+	transform: translateY(-50%);
+	opacity: 0;
+	-webkit-transition: all 0.2s ease;  
+	-moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;  
+	-o-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+.buttons-invitation a:hover:before,
+.buttons-invitation a.active:before{
+	height: 100%;
+	opacity: 1;
 }
 
 @media screen and (max-width: 900px) {
@@ -200,3 +247,4 @@ body{
 @media screen and (max-width: 400px) {
 
 }
+
