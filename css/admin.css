@@ -130,6 +130,10 @@ body{
     display: none;
 }
 
+.invitation .arrow{
+    display: none;
+}
+
 @media screen and (max-width: 900px) {
     .templates{
         grid-template-columns: repeat(2,1fr);
@@ -226,6 +230,9 @@ body{
     .list .row{
         padding: 0px 50px;
         justify-content: center;
+    }
+    .invitation .arrow{
+        display: block;
     }
 }
 
