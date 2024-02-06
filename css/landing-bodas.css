@@ -1,1 +1,18 @@
+/* IMPORTANTE: Necesita el archivo Custom */
 @import "_custom.css";
+
+:root{
+    --c-primary: #7FC6BA;
+    --c-secondary: #F1B20A;
+	--gray: #707070;
+    --gray-light: #F6F6F6;
+}
+
+a{
+	-webkit-transition: all 0.2s ease;  
+	-moz-transition: all 0.2s ease;
+	-ms-transition: all 0.2s ease;  
+	-o-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+
