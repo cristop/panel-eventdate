@@ -6,6 +6,9 @@
     --c-secondary: #F1B20A;
 	--gray: #707070;
     --gray-light: #F6F6F6;
+	
+	--filter-primary: brightness(0) invert(76%) sepia(52%) saturate(238%) hue-rotate(120deg) brightness(89%) contrast(83%);
+	--filter-secondary: brightness(0) invert(68%) sepia(55%) saturate(1960%) hue-rotate(3deg) brightness(105%) contrast(92%);
 }
 
 a{
@@ -14,5 +17,100 @@ a{
 	-ms-transition: all 0.2s ease;  
 	-o-transition: all 0.2s ease;
 	transition: all 0.2s ease;
+	color: inherit;
 }
 
+.bg-primary{
+	background-color: var(--c-primary) !important;
+}
+
+.bg-secondary{
+	background-color: var(--c-secondary) !important;
+}
+
+.bg-gray{
+	background-color: var(--gray) !important;
+}
+
+.bg-gray-light{
+	background-color: var(--gray-light) !important;
+}
+
+.text-primary{
+	color: var(--c-primary) !important;
+}
+
+.text-secondary{
+	color: var(--c-secondary) !important;
+}
+
+.text-gray{
+	color: var(--gray) !important;
+}
+
+.text-gray-light{
+	color: var(--gray-light) !important;
+}
+
+.border-primary{
+	border-color: var(--c-primary) !important;
+}
+
+.border-secondary{
+	border-color: var(--c-secondary) !important;
+}
+
+.border-gray{
+	border-color: var(--gray) !important;
+}
+
+.border-gray-light{
+	border-color: var(--gray-light) !important;
+}
+
+header{
+	z-index: 9;	
+}
+
+.principal-menu li{
+	display: block;
+}
+
+.principal-menu li a:after{
+	content: "";
+	display: block;
+	height: 3px;
+	width: 20px;
+	background-color: var(--c-primary);
+	margin-left: auto;
+	margin-right: auto;
+	opacity: 0;
+	-webkit-transition: all 0.2s ease;  
+	-moz-transition: all 0.2s ease;
+	-ms-transition: all 0.2s ease;  
+	-o-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+
+.principal-menu li a:hover{
+	font-weight: bold;
+	color: inherit;
+}
+
+.principal-menu li a:hover:after{
+	opacity: 1;	
+}
+
+@media (min-width: 1200px){
+	.container, .container-lg, .container-md, .container-sm, .container-xl {
+		max-width: 1240px;
+	}
+}
+
+footer a:hover{
+	color: var(--c-primary);
+}
+
+footer .redes a:hover{
+	filter: var(--filter-primary);
+}
