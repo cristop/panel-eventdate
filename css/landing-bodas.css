@@ -82,15 +82,11 @@ a {
   border-color: var(--gray-light) !important;
 }
 
-header {
+.principal-header{
   z-index: 9;
 }
 
-.principal-menu li {
-  display: block;
-}
-
-.principal-menu li a:after {
+.principal-header a.nav-link:after {
   content: "";
   display: block;
   height: 3px;
@@ -106,12 +102,12 @@ header {
   transition: all 0.2s ease;
 }
 
-.principal-menu li a:hover {
+.principal-header a.nav-link:hover {
   font-weight: bold;
   color: inherit;
 }
 
-.principal-menu li a:hover:after {
+.principal-header a.nav-link:hover:after {
   opacity: 1;
 }
 
@@ -279,4 +275,54 @@ footer a:hover {
 
 footer .redes a:hover {
   filter: var(--filter-primary);
+}
+
+/* FAQS */
+.accordion-item{
+	margin-bottom: 20px;
+	border: 0 !important;
+	border-radius: 20px;
+}
+
+.accordion-item > *{
+	border: 0 !important;
+}
+
+.accordion-button{
+	font-weight: bold;
+	border: 1px solid #212121 !important;
+	border-radius: 30px !important;
+	box-shadow: none !important;
+	-webkit-transition: all 0.2s ease;  
+	-moz-transition: all 0.2s ease;
+	-ms-transition: all 0.2s ease;  
+	-o-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+
+.accordion-item:not(:first-of-type) {
+    border: 0 !important;
+}
+
+.accordion-item:first-of-type .accordion-button{
+	border-radius: 30px !important;
+}
+
+.accordion-body{
+	font-weight: 500;
+	padding-bottom: 30px;
+}
+
+.accordion-button:not(.collapsed){
+	color: #000;
+	border-color: #ddd !important;
+	background-color: #eee;
+}
+
+.accordion-button:not(.collapsed)::after{
+	filter: var(--filter-primary);
+}
+
+.bg-light{
+	background-color: #F1F1F1 !important;
 }
