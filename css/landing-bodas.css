@@ -172,9 +172,11 @@ a {
 
 /* CREATE */
 
-.create {
-  height: 50vh;
-  background-size: auto;
+.create .container {
+  height: auto;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
   display: flex;
   align-items: center;
 }
@@ -184,12 +186,30 @@ a {
 }
 
 
+.create2 .container{
+    height: 85vh;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    margin: 5px;
+}
+
+
+/* PLANS */
+
+.our-plans .bg{
+	background-color: #F3F3F3;
+}
+
+.our-plans .bg h3::after{
+	
+}
+
+
 
 /* REVIEWS */
 
-.reviews .container{
-	max-width: 1500px;
-}
 
 .reviews .perfil{
 	width: fit-content;
@@ -209,13 +229,29 @@ a {
 
 /* GIFT */
 
-.gift{
-	height: 260px;
-    background-size: auto;
-	display: flex;
+.gift .container{
+	height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
     align-items: center;
 }
 
+.gift .row{
+
+}
+
+.gift .leaves-1{
+	left: -60px!important;
+	top: -50px;
+}
+
+.gift .col > div{
+	width: fit-content;
+    margin: 0 auto;
+	box-shadow: 0 2px 4px 0 rgba(136, 144, 195, 0.2),
+    0 5px 15px 0 rgba(37, 44, 97, 0.15);
+}
 
 /* carousel */
 .tns-controls {
