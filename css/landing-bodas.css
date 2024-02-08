@@ -211,9 +211,76 @@ a {
 }
 
 .our-plans .bg h3::after{
-	
+	content: "";
+	display: block;
+	width: 31px;
+	border: 1px solid;
+	margin-top: 3px;
 }
 
+.our-plans .price{
+	border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+	width: 170px;
+	margin: 0 auto;
+	box-shadow: 0 2px 4px 0 rgba(136, 144, 195, 0.2),
+    0 5px 15px 0 rgba(37, 44, 97, 0.15);
+}
+
+.our-plans .packs-items{
+	border-radius: 25px;
+}
+
+.our-plans .packs-items:hover{
+	box-shadow: 0 2px 4px 0 rgba(136, 144, 195, 0.2),
+    0 5px 15px 0 rgba(37, 44, 97, 0.15);
+}
+
+.our-plans .btn.example:hover{
+	background-color: white;
+	border-color: white!important;
+	color: var(--dark)!important;
+}
+
+.our-plans .btn.buy:hover{
+	background-color: var(--dark);
+}
+
+.our-plans .text-top{
+	transform: rotate(-35deg);
+}
+
+.our-plans .bg-dark.free, .our-plans .bg-aqua.chose{
+	overflow: hidden;
+	z-index: 1;
+}
+
+.our-plans .packs-items .bg-dark.free::before{
+	content: "Gratuito";
+    display: inline-block;
+    position: absolute;
+    top: 3px;
+    left: -32px;
+    padding: 5px 29px;
+    background-color: var(--c-primary);
+    transform: rotateZ(323deg);
+	font-weight: 600;
+	font-size: 11px;
+}
+
+.our-plans .packs-items .bg-aqua.chose::before{
+	content: "Más elegidos";
+    display: inline-block;
+    position: absolute;
+    top: 3px;
+    left: -32px;
+    padding: 5px 29px;
+    background-color: var(--c-secondary);
+    transform: rotateZ(323deg);
+	color: white;
+	font-weight: 600;
+	font-size: 11px;
+}
 
 
 /* REVIEWS */
