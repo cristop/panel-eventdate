@@ -182,7 +182,7 @@ a {
 
 .create .container {
   height: auto;
-  background-size: cover;
+  background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
   display: flex;
@@ -191,6 +191,7 @@ a {
 
 .create .container {
   margin-top: 1rem;
+  padding-top: 22px;
 }
 
 
@@ -306,10 +307,12 @@ a {
 
 .gift .container{
 	height: auto;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: left;
+	display: flex;
+	align-items: center;
+	background-color: #4AC6BB;
 }
 
 .gift .row{
@@ -317,8 +320,9 @@ a {
 }
 
 .gift .leaves-1{
-	left: -60px!important;
-	top: -50px;
+	left: -11px!important;
+	top: -30px;
+	width: 35px;
 }
 
 .gift .col > div{
@@ -349,12 +353,12 @@ a {
   }
   .tns-controls [data-controls="prev"] {
 	background-image: url("https://emidica.com/img/icos/ico-arrow-prev.svg");
-	left: -50px;
-  }
+	left: -30px;
+	}
   .tns-controls [data-controls="next"] {
 	background-image: url("https://emidica.com/img/icos/ico-arrow-next.svg");
-	right: -50px;
-  }
+	right: -20px;
+	}
 
 @media (min-width: 1200px) {
   .container,
@@ -446,4 +450,19 @@ footer .redes a:hover {
   #contacto .img-fluid{
     height: 300px;
   }
+}
+
+#tns1-iw {
+  margin: 0px 0px 0px 0px;
+}
+
+.hearth-1{
+  right: 65vw;
+  width: 70px;
+  top: -50px;
+}
+.hearth-2{
+  width: 100px;
+  margin-right: 8vw;
+  top: 50px;
 }
