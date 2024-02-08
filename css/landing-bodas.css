@@ -86,6 +86,14 @@ a {
   z-index: 9;
 }
 
+.principal-header a.nav-link{
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
 .principal-header a.nav-link:after {
   content: "";
   display: block;
@@ -327,7 +335,7 @@ footer .redes a:hover {
 .accordion-button{
 	font-weight: bold;
 	border: 1px solid #212121 !important;
-	border-radius: 30px !important;
+	border-radius: 80px !important;
 	box-shadow: none !important;
 	-webkit-transition: all 0.2s ease;  
 	-moz-transition: all 0.2s ease;
@@ -341,7 +349,7 @@ footer .redes a:hover {
 }
 
 .accordion-item:first-of-type .accordion-button{
-	border-radius: 30px !important;
+	border-radius: 80px !important;
 }
 
 .accordion-body{
@@ -361,4 +369,14 @@ footer .redes a:hover {
 
 .bg-light{
 	background-color: #F1F1F1 !important;
+}
+
+#contacto .img-fluid{
+  object-fit: cover;
+}
+
+@media screen and (max-width: 900px) {
+  #contacto .img-fluid{
+    height: 300px;
+  }
 }
