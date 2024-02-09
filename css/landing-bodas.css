@@ -414,9 +414,9 @@ a {
 		padding: 30px;
 	  }
 	.tns-item {
-		padding-right: 15px !important;
+		/* padding-right: 15px !important; */
 		transform: translateX(-15px);
-	  }
+		}
 	.tns-item img {
 		max-width: calc(100% - 15px);
 	  }
@@ -490,8 +490,16 @@ footer .redes a:hover {
   }
 }
 
-#tns1-iw {
+[id*="tns"]{
   margin: 0px 0px 0px 0px !important;
+}
+
+@media screen and (max-width: 900px) {
+	.benefits [id*="tns"] {
+		margin: 0px -10px 0px 4px !important;
+		/* padding-right: 0px !important; */
+		transform: none;
+	}
 }
 
 .hearth-0{
@@ -506,5 +514,33 @@ footer .redes a:hover {
   width: 100px;
   margin-right: 8vw;
   top: 50px;
-}.d-blo {
+}
+@media screen and (max-width: 900px) {
+	.hearth-0,
+	.hearth-2{
+		display: none
+	}
+}
+
+.tns-nav{
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	justify-content: center;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+.tns-nav > button{
+	display: inline-block;
+	border: 0;
+	background-color: #000;
+	width: 12px !important;
+	height: 12px;
+	border-radius: 50%;
+	opacity: 0.5;
+}
+.tns-nav > button.tns-nav-active{
+    opacity: 1;
+    z-index: 2;
 }
