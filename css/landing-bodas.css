@@ -127,7 +127,12 @@ a {
 }
 
 .benefits .card-body {
-  padding-top: 40px;
+  padding-top: 25px;
+  -webkit-transition: all 0.2s ease;  
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;  
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .benefits .img-card{
@@ -156,19 +161,28 @@ a {
   top: -10px !important;
 }
 
-.benefits .card-body .item-aqua:hover {
+.card:hover .card-body .item-aqua,
+.card:hover .card-body .item-yellow{
   filter: brightness(0) invert(100%) sepia(0%) saturate(1%) hue-rotate(280deg)
     brightness(111%) contrast(101%);
 }
 
-.benefits .card-img:hover {
+.card:hover .card-img {
   transform: scale(1.1);
   transition: 0.7s;
 }
 
-.benefits .card-body:hover {
-  background-color: var(--c-primary);
-  border-radius: 1rem;
+.card{
+  -webkit-transition: all 0.2s ease;  
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;  
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+
+.card:hover {
+  background-color: var(--c-primary) !important;
 }
 
 .benefits .card-img.bottom,
@@ -333,14 +347,31 @@ a {
 }
 
 /* carousel */
+.my-slider{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.my-slider a{
+  -webkit-transition: all 0.2s ease;  
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;  
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.my-slider a:hover{
+  display: block;
+  transform: scale(1.05);  
+}
+
 .tns-controls {
 	left: 0;
 	position: absolute;
 	top: 50%;
 	width: 100%;
-  }
-  .tns-controls [data-controls="prev"],
-  .tns-controls [data-controls="next"] {
+}
+.tns-controls [data-controls="prev"],
+.tns-controls [data-controls="next"] {
 	background-color: transparent;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -350,15 +381,15 @@ a {
 	position: absolute;
 	width: 24px;
 	z-index: 2;
-  }
-  .tns-controls [data-controls="prev"] {
+}
+.tns-controls [data-controls="prev"] {
 	background-image: url("https://emidica.com/img/icos/ico-arrow-prev.svg");
 	left: -30px;
-	}
-  .tns-controls [data-controls="next"] {
+}
+.tns-controls [data-controls="next"] {
 	background-image: url("https://emidica.com/img/icos/ico-arrow-next.svg");
 	right: -20px;
-	}
+}
 
 @media (min-width: 1200px) {
   .container,
@@ -456,6 +487,9 @@ footer .redes a:hover {
   margin: 0px 0px 0px 0px !important;
 }
 
+.hearth-0{
+  width: 200px;
+}
 .hearth-1{
   right: 65vw;
   width: 70px;
