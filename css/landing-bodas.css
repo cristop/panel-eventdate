@@ -435,18 +435,7 @@ a {
   }
 }
 
-@media (max-width: 576px){
-	.my-slider {
-		flex-direction: column;
-		padding: 30px;
-	  }
-	.tns-item {
-		/* padding-right: 15px !important; */
-		transform: translateX(-15px);
-		}
-	.tns-item img {
-		max-width: calc(100% - 15px);
-	  }
+
 @media (max-width: 576px) {
   .my-slider {
     flex-direction: column;
@@ -486,6 +475,19 @@ a {
   .our-plans .card.card-body{
     border: none;
   }
+  .reviews-mobile .my-slider-3 .col{
+    height: 310px;
+  }
+
+  .reviews-mobile .tns-item img{
+    max-width: inherit;
+  }
+
+  .reviews-mobile .tns-outer .tns-nav{
+    bottom: -2rem!important;
+  }
+
+  .reviews-mobile .my-slider-3  .bg{}
 }
 
 footer a:hover {
