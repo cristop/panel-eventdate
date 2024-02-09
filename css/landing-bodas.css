@@ -272,26 +272,26 @@ a {
 
 .our-plans .packs-items .bg-dark.free::before{
 	content: "Gratuito";
-    display: inline-block;
-    position: absolute;
-    top: 3px;
-    left: -32px;
-    padding: 5px 29px;
-    background-color: var(--c-primary);
-    transform: rotateZ(323deg);
+	display: inline-block;
+	position: absolute;
+	top: 6px;
+	left: -20px;
+	padding: 5px 29px;
+	background-color: var(--c-primary);
+	transform: rotateZ(323deg);
 	font-weight: 600;
 	font-size: 11px;
 }
 
 .our-plans .packs-items .bg-aqua.chose::before{
 	content: "Más elegidos";
-    display: inline-block;
-    position: absolute;
-    top: 3px;
-    left: -32px;
-    padding: 5px 29px;
-    background-color: var(--c-secondary);
-    transform: rotateZ(323deg);
+	display: inline-block;
+	position: absolute;
+	top: 14px;
+	left: -32px;
+	padding: 5px 29px;
+	background-color: var(--c-secondary);
+	transform: rotateZ(323deg);
 	color: white;
 	font-weight: 600;
 	font-size: 11px;
@@ -337,6 +337,13 @@ a {
 	left: -11px!important;
 	top: -30px;
 	width: 35px;
+}
+
+@media screen and (max-width: 900px) {
+	.gift .leaves-1{
+		left: 10px!important;
+		top: -25px;
+	}
 }
 
 .gift .col > div{
@@ -499,4 +506,5 @@ footer .redes a:hover {
   width: 100px;
   margin-right: 8vw;
   top: 50px;
+}.d-blo {
 }
