@@ -208,12 +208,15 @@ a {
 }
 
 .create2 .container {
-  height: 85vh;
-  background-size: contain;
+  background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   display: flex;
-  margin: 10px;
+  margin: 0 10px;
+  border-radius: 10px;
+  width: auto;
+  padding-bottom: 420px;
+  overflow: hidden;
 }
 
 /* PLANS */
@@ -425,6 +428,15 @@ a {
   right: -20px;
 }
 
+@media screen and (max-width: 900px) {
+  .tns-controls [data-controls="prev"] {
+    left: -10px;
+  }
+  .tns-controls [data-controls="next"] {
+    right: -15px;
+  }
+}
+
 @media (min-width: 1200px) {
   .container,
   .container-lg,
@@ -445,9 +457,7 @@ a {
     padding-right: 15px !important;
     transform: translateX(-15px);
   }
-  .tns-item img {
-    max-width: calc(100% - 15px);
-  }
+  
 
   .our-plans .price {
     width: 250px;
@@ -468,13 +478,18 @@ a {
     transform: rotate(0deg);
   }
   .our-plans .packs-items .arrow-white{
-    transform: rotate(180deg);
+    /* transform: rotate(180deg); */
     transition: 0.5s;
   }
 
   .our-plans .card.card-body{
     border: none;
   }
+
+  .reviews-mobile .my-slider-3{
+    padding-top: 60px;
+  }
+
   .reviews-mobile .my-slider-3 .col{
     height: 310px;
   }
@@ -558,16 +573,33 @@ footer .redes a:hover {
   }
 }
 
-[id*="tns"]{
-  margin: 0px 0px 0px 0px !important;
+@media screen and (min-width: 900px) {
+  [id*="-iw"]{
+    margin: 0px 0px 0px 0px !important;
+  }
 }
 
 @media screen and (max-width: 900px) {
-	.benefits [id*="tns"] {
-		margin: 0px -10px 0px 4px !important;
-		/* padding-right: 0px !important; */
-		transform: none;
-	}
+  #principal-spot{
+	  background-position: 31% 100%;
+	 }
+	.benefits [id*="-iw"]{
+    margin: 0px -30px 0px 17px !important;
+  }
+  .benefits .tns-controls{
+    display: none;
+  }
+  .models [id*="-iw"]{
+    margin: 0 -27px 0px 32px !important;
+  }
+  .reviews-mobile [id*="-iw"]{
+    margin: 0 0px 0px 13px !important;
+  }
+  .gift .container{
+    background-image: url(../img/landing-bodas/bg-premio-mobile.svg) !important;
+    background-position: center;
+    background-size: 100%;
+  }
 }
 
 
@@ -601,13 +633,14 @@ footer .redes a:hover {
 	bottom: 0;
 }
 .tns-nav > button{
-	display: inline-block;
+	display: block;
 	border: 0;
 	background-color: #000;
 	width: 12px !important;
 	height: 12px;
 	border-radius: 50%;
 	opacity: 0.5;
+	overflow: hidden;
 }
 .tns-nav > button.tns-nav-active{
     opacity: 1;
