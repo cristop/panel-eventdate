@@ -147,10 +147,15 @@ a {
   left: 150px;
 }
 
+.models .bg img{
+  padding: 10px;
+  background-color: #F3F3F3;
+}
+
 /* BENEFITS */
 
 .benefits .star-1{
-  left: 300px;
+  left: 20vw;
 }
 
 .benefits .col-md-3 .card {
@@ -193,6 +198,10 @@ a {
   top: -10px !important;
 }
 
+.benefits .xoxo{
+  display: none;
+}
+
 .card:hover .card-body .item-aqua,
 .card:hover .card-body .item-yellow {
   filter: brightness(0) invert(100%) sepia(0%) saturate(1%) hue-rotate(280deg)
@@ -227,7 +236,7 @@ a {
 
 .create .xoxo{
   right: 37vw;
-  width: 110px;
+  width: 150px;
   top: -20px;
 }
 
@@ -260,17 +269,20 @@ a {
 /* PLANS */
 
 .our-plans .star-1{
-  right: 0;
+  right: -50px;
   top: -150px;
 }
 
 .our-plans .star-2{
   right: 50px;
-  top: 50px;
+  top: 40px;
+  width: 50px;
 }
 
 .our-plans .xoxo{
-  left: -100px;
+  left: -6vw;
+  width: 150px;
+  top: 80px;
 }
 
 .our-plans .bg {
@@ -370,7 +382,7 @@ a {
 	top: 14px;
 	left: -32px;
 	padding: 5px 29px;
-	background-color: var(--c-secondary);
+	background-color: var(--c-primary);
 	transform: rotateZ(323deg);
 	color: white;
 	font-weight: 600;
@@ -421,6 +433,17 @@ a {
   margin: 0 auto;
   box-shadow: 0 2px 4px 0 rgba(136, 144, 195, 0.2),
 }
+
+
+/* FORMAS DE PAGO */
+
+#forma-pago .star-2{
+  right: 5vw;
+  bottom: 23px;
+  width: 60px;
+}
+
+
 @media screen and (max-width: 900px) {
 	.gift .leaves-1{
 		left: 10px!important;
@@ -510,15 +533,16 @@ a {
     transform: translateX(-15px);
   }
   
-
   .our-plans .price {
     width: 250px;
   }
   .our-plans .packs-items .bg-dark.free::before {
     font-size: 18px;
+    left: -34px;
   }
   .our-plans .packs-items .chose::before {
-    font-size: 16px;
+    font-size: 16px!important;
+    top: 18px!important;
   }
   .our-plans .packs-items .arrow {
     width: fit-content;
@@ -530,7 +554,7 @@ a {
     transform: rotate(0deg);
   }
   .our-plans .packs-items .arrow-white{
-    /* transform: rotate(180deg); */
+     transform: rotate(180deg);
     transition: 0.5s;
   }
 
@@ -554,7 +578,43 @@ a {
     bottom: -2rem!important;
   }
 
-  .reviews-mobile .my-slider-3  .bg{}
+  .benefits .star-1{
+    display: none;
+  }
+
+  .benefits .xoxo{
+    display: block;
+    width: 100px;
+    left: -3vw;
+    top: 30px;
+
+  }
+
+  #faq .star-1{
+    left: -25px;
+    width: 80px;
+    top: 100px!important;
+  }
+
+  #forma-pago .star-2{
+    top: -80px;
+  }
+
+  #contacto .star-1{
+    top: 111vh!important;
+    z-index: -1;
+  }
+  #contacto .xoxo{
+    display: none;
+  }
+
+  #contacto .row{
+    display: grid;
+  }
+
+  #contacto .row > :first-child{
+    grid-row-start: 2;
+  }
 }
 
 footer a:hover {
@@ -566,6 +626,18 @@ footer .redes a:hover {
 }
 
 /* FAQS */
+
+#faq .star-1{
+  right: -42px;
+  top: 33vh;
+}
+
+#faq .star-2{
+  bottom: 60px;
+  left: -80px;
+  width: 80px;
+}
+
 .accordion-item {
   margin-bottom: 20px;
   border: 0 !important;
@@ -617,6 +689,15 @@ footer .redes a:hover {
 
 #contacto .img-fluid {
   object-fit: cover;
+}
+
+#contacto .star-1{
+  left: -70px;
+  top: -50px;
+}
+
+#contacto .xoxo{
+  width: 140px;
 }
 
 #model1 .modal-content{
@@ -686,7 +767,7 @@ footer .redes a:hover {
 
 @media screen and (max-width: 900px) {
   #principal-spot{
-	  background-position: 31% 100%;
+	  /* background-position: 31% 100%; */
 	 }
 	.benefits [id*="-iw"]{
     margin: 0px -30px 0px 17px !important;
@@ -704,6 +785,23 @@ footer .redes a:hover {
     background-image: url(../img/landing-bodas/bg-premio-mobile.svg) !important;
     background-position: center;
     background-size: 100%;
+  }
+  .models .star-1{
+    width: 46px;
+    left: 20px;
+  }
+  .models .star-2{
+    left: 80px;
+    top: -73px;
+    width: 25px;
+  }
+  .our-plans .star-1{
+    width: 80px;
+    right: -60px;
+    top: -48vw;
+  }
+  .our-plans .xoxo, .our-plans .star-2{
+    display: none;
   }
 }
 
