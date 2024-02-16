@@ -1,0 +1,231 @@
+@import "_custom.css";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,400;1,500;1,600&family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --c-primary: #c18fd2;
+  --c-secondary: #fffefd;
+  --c-secondary-light: #f6e0f8;
+  --c-tericary: #f0cdf5;
+  --dark: #272727;
+  --gray-light: #979797;
+  --gray: #424242;
+  --f-secondary: 'Poppins', sans-serif;;
+}
+
+.text-gray{
+    color: var(--gray);
+}
+
+.bg-lilac-dark{
+    background-color: var(--c-primary);
+}
+
+.bg-lilac-light{
+    background-color: var(--c-secondary-light);
+}
+
+.bg-gray-dark{
+    background-color: var(--gray-light);
+}
+
+.bg-terciary{
+    background-color: var(--c-tericary)!important;
+}
+
+.f-secondary{
+    font-family: 'Poppins', sans-serif!important;
+}
+
+* {
+  font-family: "Quicksand", sans-serif;
+}
+
+body {
+  color: var(--dark);
+  overflow-x: hidden !important;
+  width: 100vw;
+  touch-action: pan-y;
+}
+
+img{
+    max-width: 100%;
+}
+
+.home .waves {
+  top: inherit;
+  left: 0;
+}
+
+.home .leaves-1{
+    right: -8rem!important;
+    top: -5rem;
+}
+
+.home .leaves-2{
+    z-index: 1;
+    bottom: -10rem!important;
+    left: -5rem!important;
+}
+
+.text-descprition .leaves-1{
+    right: -7rem!important;
+}
+
+.gallery .leaves-1{
+    top: -16rem;
+    left: -5rem!important;
+}
+
+.soong-book .leaves-1{
+    right: -10rem!important;
+}
+
+.gift .leaves-1{
+    top: -20rem;
+    left: -6rem!important;
+}
+
+.confirmation .leaves-1{
+    right: -7rem!important;
+}
+
+.confirmation .leaves-2{
+    left: -7rem!important;
+}
+
+.waves, .waves2{
+    pointer-events: none;
+    object-fit: cover;
+    width: 100%;
+}
+
+.soong-book .container{
+    max-width: 1000px;
+}
+
+.dress-code .row .col-md-6 > div{
+    width: 400px;
+}
+
+.nav-link{
+    color: white;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background-color: white;
+    color: #000!important;
+}
+
+.nav-link:hover{
+    opacity: 0.7;
+    color: white!important;
+}
+
+.form-check-input:checked{
+    background-color: var(--c-primary);
+    border-color: var(--c-primary);
+}
+
+.confirmation .form-control::placeholder{
+    color: var(--dark);
+}
+
+.tns-controls {
+    left: 0;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+  }
+  .tns-controls [data-controls="prev"], .tns-controls [data-controls="next"] {
+    background-color: transparent;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: 0;
+    height: 24px;
+    padding: 0;
+    position: absolute;
+    width: 24px;
+    z-index: 2;
+  }
+  .tns-controls [data-controls="prev"] {
+    background-image: url('https://emidica.com/img/icos/ico-arrow-prev.svg');
+    left: -10px;
+  }
+  .tns-controls [data-controls="next"] {
+    background-image: url('https://emidica.com/img/icos/ico-arrow-next.svg');
+    right: -10px;
+  }
+
+
+@media (max-width: 576px){
+
+    .dress-code .row .col-md-6 > div{
+        width: 100%;
+    }
+    .dress-code .row .col-md-6{
+        width: 100%!important;
+    }
+    .dress-code .row{
+        gap: 50px;
+    }
+    .leaves-1, .leaves-2{
+        height: 200px;
+    }
+    .home .leaves-1, .text-descprition .leaves-1, .soong-book .leaves-1, .confirmation .leaves-1{
+        right: 0rem!important;
+    }
+    .text-descprition .leaves-1{
+        top: 9rem;
+        height: 120px;
+    }
+    .soong-book .leaves-1{
+        height: 120px;
+        bottom: -5rem!important;
+        z-index: 1;
+    }
+    .confirmation .leaves-1{
+        height: 120px;
+    }
+    .gift .leaves-1{
+        top: -5rem;
+    }
+    .gallery .leaves-1{
+        top: -7rem;
+
+    }
+    .dress-code .waves{
+        margin-top: 80px;
+    }
+    .waves-2{
+        bottom: -39px;
+    }
+    .rectangle{
+        height: 40px
+    }
+    #countdown{
+        display: grid!important;
+        grid-template-columns: repeat(2, 1fr)!important;
+    }
+    .gallery .my-slider{
+        flex-direction: column;
+        padding: 30px;
+    }
+    .gallery .tns-item{
+        padding-right: 15px !important;
+        transform: translateX(-15px);
+    }
+    .gallery .tns-item img{
+        max-width: calc(100% - 15px);
+    }
+    .soong-book .h-100{
+        padding-left: 0px!important;
+        padding-right: 0px!important;
+    }
+    .soong-book p, .gift p, .album p{
+        font-size: 20px!important;
+        font-weight: 500;
+    }
+    .soong-book form .d-flex{
+        display: block!important;
+    }
+}

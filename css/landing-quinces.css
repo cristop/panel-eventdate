@@ -68,6 +68,10 @@ a {
   background-color: #7C8F90;
 }
 
+.bg-yellow-light{
+  background-color: #fbebd5!important;
+}
+
 .text-primary {
   color: var(--c-primary) !important;
 }
@@ -98,6 +102,10 @@ a {
 
 .border-gray-light {
   border-color: var(--gray-light) !important;
+}
+
+.border-yellow{
+  border-color: #f5d09c!important;
 }
 
 .principal-header {
@@ -222,7 +230,7 @@ a {
 }
 
 .card:hover {
-  background-color: var(--c-primary) !important;
+  /* background-color: var(--c-secondary) !important; */
 }
 
 .benefits .card-img.bottom,
@@ -709,20 +717,16 @@ footer .redes a:hover {
   min-width: 700px;
   height: auto;
 }
-#model1 .modal-body{
-  background-color: #f6e4d3;
-  padding-left: 0;
-  padding-right: 0;
+#model1 .modal-body .border-yellow{
+  padding: 80px 150px;
 }
 #model1 .modal-body .bg{
-  background-color: #fbf1e9;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 #model1 .modal-body h2{
-  font-family: 'Parisienne', cursive;
   font-size: 50px;
 }
 #model1 .modal-body .bg button{
