@@ -107,7 +107,7 @@ body{
 }
 
 .individual-invitation{
-    height: calc(100% - 30px);
+    /* height: calc(100% - 30px); */
 }
 
 .navbar{
@@ -164,6 +164,59 @@ body{
 	opacity: 1;
 }
 
+
+/* PANEL HOME */
+
+.individual-invitation .row .bg-primary{
+    width: 60px;
+    height: 60px;
+}
+
+.tns-controls {
+    left: 0;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+
+.tns-controls [data-controls="prev"],
+.tns-controls [data-controls="next"] {
+    background-color: transparent;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: 0;
+    height: 24px;
+    padding: 0;
+    position: absolute;
+    width: 24px;
+}
+
+.tns-controls [data-controls="prev"] {
+    background-image: url('/img/icons/ico-arrow-prev.svg');
+    left: 0;
+}
+
+.tns-controls [data-controls="next"] {
+    background-image: url('/img/icons/ico-arrow-next.svg');
+    right: 0;
+}
+
+.score{
+    right: 2rem;
+    bottom: -25px;
+}
+
+.border-shadow{
+    box-shadow: 0 2px 4px 0 rgba(136, 144, 195, 0.2),
+    0 5px 15px 0 rgba(37, 44, 97, 0.15);
+}
+
+.wedding .btn-underline:hover{
+    opacity: 0.7;
+}
+
+/* END PANEL HOME */
+
 @media screen and (max-width: 900px) {
     .templates{
         grid-template-columns: repeat(2,1fr);
@@ -202,7 +255,7 @@ body{
         width: 100%;
         border-top-right-radius: 0px!important;
         border-top-left-radius: 0px!important;
-        height: 350px;    
+        /* height: 350px;     */
     }
     .template-details{
         box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.02);
