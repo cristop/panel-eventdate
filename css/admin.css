@@ -1,84 +1,84 @@
 @import "_custom.css";
 
-:root{
+:root {
     --c-primary: #7FC6BA;
     --c-secondary: #F1B20A;
-	--gray: #707070;
+    --gray: #707070;
     --gray-light: #F6F6F6;
 }
 
-a{
-	-webkit-transition: all 0.2s ease;  
-	-moz-transition: all 0.2s ease;
-	-ms-transition: all 0.2s ease;  
-	-o-transition: all 0.2s ease;
-	transition: all 0.2s ease;
+a {
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
 }
 
-body{
+body {
     background-color: var(--gray-light);
     min-height: 100vh;
 }
 
-.sidebar{
+.sidebar {
     border-radius: 0px 35px 35px 0;
     padding-top: 40px;
 }
 
-.c-primary{
+.c-primary {
     color: var(--c-primary) !important;
 }
 
-.bg-primary{
+.bg-primary {
     background-color: var(--c-primary) !important;
 }
 
-.border-primary{
+.border-primary {
     border-color: var(--c-primary) !important;
 }
 
-.c-secondary{
+.c-secondary {
     color: var(--c-secondary) !important;
 }
 
-.bg-secondary{
+.bg-secondary {
     background-color: var(--c-secondary) !important;
 }
 
-.border-secondary{
+.border-secondary {
     border-color: var(--c-secondary) !important;
 }
 
-.bg-gray-light{
+.bg-gray-light {
     background-color: var(--gray-light) !important;
 }
 
-.c-gray{
+.c-gray {
     color: var(--gray) !important;
 }
 
-.bg-gray{
+.bg-gray {
     background-color: var(--gray) !important;
 }
 
-.logo{
+.logo {
     max-width: 180px;
 }
 
-.image-bg{
+.image-bg {
     background-repeat: no-repeat;
     background-position: left 117%;
     background-size: 100%;
 }
 
-.templates{
+.templates {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 25px 15px;
     padding-bottom: 20px;
 }
 
-.header-invitation{
+.header-invitation {
     position: relative;
     overflow: hidden;
     background-repeat: no-repeat;
@@ -86,7 +86,7 @@ body{
     background-position: center;
 }
 
-.header-invitation:before{
+.header-invitation:before {
     content: "";
     display: block;
     position: absolute;
@@ -94,27 +94,27 @@ body{
     height: 100%;
     left: 0;
     top: 0;
-    background-image: linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(255,255,255,0.1) 120%);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(255, 255, 255, 0.1) 120%);
 }
 
-.template-details{
+.template-details {
     margin-top: -20px;
     position: relative;
 }
 
-.actions{
+.actions {
     bottom: 10px;
 }
 
-.individual-invitation{
+.individual-invitation {
     /* height: calc(100% - 30px); */
 }
 
-.navbar{
+.navbar {
     display: none;
 }
 
-.panel-prev{
+.panel-prev {
     left: 50%;
     transform: translateX(-50%);
     border-radius: 0 0px 15px 15px;
@@ -122,52 +122,55 @@ body{
 }
 
 .modal-header,
-.modal-footer{
+.modal-footer {
     border: 0 !important;
 }
 
-.navbar{
+.navbar {
     display: none;
 }
 
-.invitation .arrow{
+.invitation .arrow {
     display: none;
 }
 
-.buttons-invitation a{
-	position: relative;
+.buttons-invitation a {
+    position: relative;
 }
+
 .buttons-invitation a:hover,
-.buttons-invitation a.active{
-	font-weight: 600;	
+.buttons-invitation a.active {
+    font-weight: 600;
 }
-.buttons-invitation a:before{
-	content: "";
-	display: block;
-	position: absolute;
-	width: 6px;
-	height: 0%;
-	background-color: var(--c-primary);
-	right: -16px;
-	top: 50%;
-	transform: translateY(-50%);
-	opacity: 0;
-	-webkit-transition: all 0.2s ease;  
-	-moz-transition: all 0.2s ease;
-    -ms-transition: all 0.2s ease;  
-	-o-transition: all 0.2s ease;
-	transition: all 0.2s ease;
+
+.buttons-invitation a:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 6px;
+    height: 0%;
+    background-color: var(--c-primary);
+    right: -16px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
 }
+
 .buttons-invitation a:hover:before,
-.buttons-invitation a.active:before{
-	height: 100%;
-	opacity: 1;
+.buttons-invitation a.active:before {
+    height: 100%;
+    opacity: 1;
 }
 
 
 /* PANEL HOME */
 
-.individual-invitation .row .bg-primary{
+.individual-invitation .row .bg-primary {
     width: 60px;
     height: 60px;
 }
@@ -201,125 +204,172 @@ body{
     right: 0;
 }
 
-.score{
+.score {
     right: 2rem;
     bottom: -25px;
 }
 
-.border-shadow{
+.border-shadow {
     box-shadow: 0 2px 4px 0 rgba(136, 144, 195, 0.2),
-    0 5px 15px 0 rgba(37, 44, 97, 0.15);
+        0 5px 15px 0 rgba(37, 44, 97, 0.15);
 }
 
-.wedding .btn-underline:hover{
+.wedding .btn-underline:hover {
     opacity: 0.7;
 }
 
 /* END PANEL HOME */
 
+/* INTERNA MODELO */
+
+/* Estilos adicionales para personalizar las miniaturas */
+.carousel-thumbnail-item {
+    padding: 0;
+    margin: 0;
+    width: 60px;
+    height: 40px;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.carousel-thumbnail-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-thumbnail-item.active {
+    border-color: blue;
+    /* Cambia el color del borde cuando se selecciona la miniatura */
+}
+
+/* END INTERNA MODELO */
 @media screen and (max-width: 900px) {
-    .templates{
-        grid-template-columns: repeat(2,1fr);
+    .templates {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media screen and (max-width: 500px){
-    .templates{
-        grid-template-columns: repeat(1,1fr);
+@media screen and (max-width: 500px) {
+    .templates {
+        grid-template-columns: repeat(1, 1fr);
         padding: 30px;
     }
-    .bg-black.sidebar, .search, .top-text .actions{
-        display: none!important;
+
+    .bg-black.sidebar,
+    .search,
+    .top-text .actions {
+        display: none !important;
     }
-    .navbar{
+
+    .navbar {
         display: block;
     }
-    .navbar button.navbar-toggler{
+
+    .navbar button.navbar-toggler {
         border: none;
     }
-    .top-text{
-        align-items: center!important;
+
+    .top-text {
+        align-items: center !important;
         position: relative;
         z-index: 2;
         /* color: white; */
         padding: 0px 30px;
     }
-    .image-bg{
+
+    .image-bg {
         background-size: auto;
         background-position: right 117%;
         min-height: 100vh;
     }
-    .header-invitation{
+
+    .header-invitation {
         position: absolute;
         top: 0;
         width: 100%;
-        border-top-right-radius: 0px!important;
-        border-top-left-radius: 0px!important;
+        border-top-right-radius: 0px !important;
+        border-top-left-radius: 0px !important;
         /* height: 350px;     */
     }
-    .template-details{
+
+    .template-details {
         box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.02);
     }
-    .template-details .model{
+
+    .template-details .model {
         background-color: var(--gray-light) !important;
         width: 100%;
         border-radius: 50px;
         padding: 0 30px;
     }
-    .template-details .share{
+
+    .template-details .share {
         width: 100%;
         text-align: center;
     }
-    .template-details span{
+
+    .template-details span {
         display: none;
     }
-    .template-details .btn{
-        border-radius: 50%!important;
-        padding: 10px!important;
+
+    .template-details .btn {
+        border-radius: 50% !important;
+        padding: 10px !important;
         width: 48px;
         height: 48px;
     }
-    .col-sm-10.py-5.px-sm-5{
+
+    .col-sm-10.py-5.px-sm-5 {
         padding: 0;
     }
-    .individual-invitation .pb-5{
+
+    .individual-invitation .pb-5 {
         padding-top: 150px;
     }
-    .actions-btn{
+
+    .actions-btn {
         padding: 30px;
     }
-    .actions-btn a{
+
+    .actions-btn a {
         width: 100%;
         margin-bottom: 20px;
     }
-    .invitation .top-text > :first-child{
+
+    .invitation .top-text> :first-child {
         display: none;
     }
-    .invitation span.navbar-toggler-icon.c-white{
+
+    .invitation span.navbar-toggler-icon.c-white {
         filter: brightness(0) invert(1);
     }
-    .list .search,  .list .search form{
-        display: block!important;
+
+    .list .search,
+    .list .search form {
+        display: block !important;
     }
-    .list .search, .make{
-        width: 100%!important;
-        margin-right: 0px!important;
+
+    .list .search,
+    .make {
+        width: 100% !important;
+        margin-right: 0px !important;
         justify-content: center;
-        padding: 1.5rem!important;
+        padding: 1.5rem !important;
     }
-    .list .search form > div{
+
+    .list .search form>div {
         margin-bottom: 10px;
     }
-    .list .row{
+
+    .list .row {
         padding: 0px 50px;
         justify-content: center;
     }
-    .invitation .arrow{
+
+    .invitation .arrow {
         display: block;
     }
 }
 
-@media screen and (max-width: 400px) {
-
-}
-
+@media screen and (max-width: 400px) {}
