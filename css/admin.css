@@ -104,6 +104,7 @@ body {
 
 .actions {
     bottom: 10px;
+    left: 8rem;
 }
 
 .individual-invitation {
@@ -370,6 +371,10 @@ body {
 
     .invitation .arrow {
         display: block;
+    }
+
+    .actions {
+        left: 0;
     }
 }
 
