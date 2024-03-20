@@ -1,0 +1,55 @@
+<div class="modal_payments">
+    <button type="button" data-bs-toggle="modal" data-bs-target="#model1"
+    class="fs-sm-11 border-0 p-1 bg-gray-light rounded-3 mb-0 ms-1 text-center">Ver
+    sin modelos de referencia</button>
+
+    <div class="modal fade" id="model1" tabindex="-1" data-bs-backdrop="static"
+        data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered"
+            role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-5 d-flex justify-content-center">
+                    <div class="bg d-flex flex-column justify-content-center h-100 text-center">
+                        <h2 class="fs-sm-24 mb-0 fs-21 fw-bold text-center text-dark">Realizar el pago<span
+                            style="color: #F1B20A;">.</span></h2>
+
+                        <p class="fs-sm-18 fw-600 mb-sm-3 mt-sm-4">Tarjeta de crédito o débito</p>
+                        <img src="img/payments.svg" class="mb-5" alt="">
+                       <div class="form text-start">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label fs-sm-13">Número de tarjeta</label>
+                                <input type="text" required class="form-control rounded-pill py-2" id="exampleFormControlInput1" placeholder="123 123 123">
+                            </div>
+                            <div class="mb-3 row">
+                                <div class="col-sm-6">
+                                    <label for="exampleFormControlInput1" class="form-label fs-sm-13">Vencimiento</label>
+                                    <input type="text" required class="form-control rounded-pill py-2" id="exampleFormControlInput1" placeholder="DD/MM/AA">
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="exampleFormControlInput1" class="form-label fs-sm-13">Código de Seguridad</label>
+                                    <input type="text" required class="form-control rounded-pill py-2" id="exampleFormControlInput1" placeholder="123">
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label fs-sm-13">Nombre del titular como aparece en la tarjeta</label>
+                                <input type="text" required class="form-control rounded-pill py-2" id="exampleFormControlInput1" placeholder="Maria López">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label fs-sm-13">Documento del titular</label>
+                                <input type="text" required class="form-control rounded-pill py-2" id="exampleFormControlInput1" placeholder="999">
+                            </div>
+                            <button class="fw-bold w-100 bg-primary text-white border-0 px-5 py-3 rounded-pill mt-3">PAGAR</button>
+                            <p class="text-danger text-center fs-sm-11 mt-3">Error de pago</p>
+                       </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
