@@ -219,8 +219,6 @@ body {
     opacity: 0.7;
 }
 
-/* END PANEL HOME */
-
 /* INTERNA MODELO */
 
 #model1 .modal-content {
@@ -271,6 +269,101 @@ body {
     }
 }
 
+@media screen and (max-width: 500px){
+    .template-details {
+        box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.02);
+    }
+
+    .template-details .model {
+        background-color: var(--gray-light) !important;
+        width: 100%;
+        border-radius: 50px;
+        padding: 0 30px;
+    }
+
+    .template-details .share {
+        width: 100%;
+        text-align: center;
+    }
+
+    .template-details span {
+        display: none;
+    }
+
+    .template-details .btn {
+        border-radius: 50% !important;
+        padding: 10px !important;
+        width: 48px;
+        height: 48px;
+    }
+
+    .col-sm-10.py-5.px-sm-5 {
+        padding: 0;
+    }
+
+    .individual-invitation .pb-5 {
+        padding-top: 150px;
+    }
+
+    .actions-btn {
+        padding: 30px;
+    }
+
+    .actions-btn a {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .invitation .top-text> :first-child {
+        display: none;
+    }
+
+    .invitation span.navbar-toggler-icon.c-white {
+        filter: brightness(0) invert(1);
+    }
+
+    .list .search,
+    .list .search form {
+        display: block !important;
+    }
+
+    .list .search,
+    .make {
+        width: 100% !important;
+        margin-right: 0px !important;
+        justify-content: center;
+        padding: 1.5rem !important;
+    }
+
+    .list .search form>div {
+        margin-bottom: 10px;
+    }
+
+    .list .row {
+        padding: 0px 50px;
+        justify-content: center;
+    }
+
+    .invitation .arrow {
+        display: block;
+    }
+
+    .actions {
+        left: 0;
+    }
+
+    #plans .arrow-white{
+        transform: rotate(180deg);
+        transition: 0.5s;
+    }
+
+    #plans .collapsed .arrow-white{
+        transform: rotate(0deg);
+    }
+}
+
+
+/* END PANEL HOME */
 
 @media screen and (max-width: 900px) {
     .templates {
