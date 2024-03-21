@@ -245,7 +245,33 @@ body {
     padding-bottom: 20px;
 }
 
+.icon-arrow{
+    transform: rotate(270deg);
+    width: 18px;
+}
+
+#plans .bg-price{
+    border-top-right-radius: 0px !important;
+    border-top-left-radius: 0px !important;
+}
+
 /* END INTERNA MODELO */
+
+@media screen and (max-width: 1200px){
+    #plans .row{
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+    }
+    #plans .row > div{
+        width: 100%;
+    }
+    #plans button.btn{
+        width: auto!important;
+    }
+}
+
+
 @media screen and (max-width: 900px) {
     .templates {
         grid-template-columns: repeat(2, 1fr);
