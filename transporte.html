@@ -15,20 +15,24 @@
 
 <body>
     <!-- Modal trigger button -->
-    <button type="button" class="btn btn-dark btn-lg" data-bs-toggle="modal" data-bs-target="#transport">
+    <button type="button" class="btn d-block mb-3 btn-dark btn-lg" data-bs-toggle="modal" data-bs-target="#transport">
         Launch
     </button>
 
     <!-- Modal Body -->
     <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
-    <div class="modal fade" id="transport" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog"
+    <div class="modal fade d-none" id="transport" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog"
         aria-labelledby="modalTitleId" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header bg-gray-light">
-                    <img src="img/transporte.svg" alt="" height="40">
-                    <span class="d-inline-block fw-bold ps-3">Transporte Privado<span class="c-secondary">.</span></span>
+                    <img src="img/transporte.svg" alt="" height="52" class="d-sm-block d-none">
+                    <div class="d-sm-block d-none"><span class="d-inline-block fw-bold ps-3 fs-sm-21">Transporte Privado<span class="c-secondary">.</span></span></div>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="d-sm-none d-flex align-items-center justify-content-between px-4">
+                    <span class="d-inline-block fw-bold fs-21">Transporte <br> Privado<span class="c-secondary">.</span></span>
+                    <img src="img/transporte.svg" alt="" height="100">
                 </div>
                 <div class="modal-body">
                     <div class="table-responsive">
@@ -55,9 +59,70 @@
                         </table>
                     </div>
                 </div>
-                <div class="modal-footer d-sm-flex d-block">
+                <div class="modal-footer d-sm-flex d-none">
                     <button type="button" class="btn btn-secondary fw-700 rounded-5 bg-primary border-0 px-4" data-bs-dismiss="modal">Descargar PDF</button>
                     <button type="button" class="btn btn-primary fw-700 rounded-5 bg-primary border-0 px-4">Descargar Excel</button>
+                </div>
+                <div class="modal-footer d-sm-none d-block">
+                    <button type="button" class="btn btn-secondary fw-700 w-100 rounded-5 bg-dark border-0 px-4 mb-2" data-bs-dismiss="modal">Descargar PDF</button>
+                    <button type="button" class="btn btn-secondary fw-700 w-100 rounded-5 bg-dark border-0 px-4">Descargar Excel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button type="button" class="btn btn-dark btn-lg" data-bs-toggle="modal" data-bs-target="#payments">
+        Payments
+    </button>
+
+    <div class="modal_payments">
+    
+        <div class="modal fade d-none" id="payments" tabindex="-1" data-bs-backdrop="static"
+            data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered"
+                role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-5 d-flex justify-content-center">
+                        <div class="bg d-flex flex-column justify-content-center h-100 text-center">
+                            <h2 class="fs-sm-24 mb-0 fs-21 fw-bold text-center text-dark">Realizar el pago<span
+                                style="color: #F1B20A;">.</span></h2>
+    
+                            <p class="fs-sm-18 fw-600 mb-sm-3 mt-sm-4">Tarjeta de crédito o débito</p>
+                            <img src="img/payments.svg" class="mb-5" alt="">
+                           <div class="form text-start">
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label fs-sm-13">Número de tarjeta</label>
+                                    <input type="text" required class="form-control rounded-pill py-2" id="exampleFormControlInput1" placeholder="123 123 123">
+                                </div>
+                                <div class="mb-3 row">
+                                    <div class="col-sm-6">
+                                        <label for="exampleFormControlInput1" class="form-label fs-sm-13">Vencimiento</label>
+                                        <input type="text" required class="form-control rounded-pill py-2" id="exampleFormControlInput1" placeholder="DD/MM/AA">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label for="exampleFormControlInput1" class="form-label fs-sm-13">Código de Seguridad</label>
+                                        <input type="text" required class="form-control rounded-pill py-2" id="exampleFormControlInput1" placeholder="123">
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label fs-sm-13">Nombre del titular como aparece en la tarjeta</label>
+                                    <input type="text" required class="form-control rounded-pill py-2" id="exampleFormControlInput1" placeholder="Maria López">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label fs-sm-13">Documento del titular</label>
+                                    <input type="text" required class="form-control rounded-pill py-2" id="exampleFormControlInput1" placeholder="999">
+                                </div>
+                                <button class="fw-bold w-100 bg-primary text-white border-0 px-5 py-3 rounded-pill mt-3">PAGAR</button>
+                                <p class="text-danger text-center fs-sm-11 mt-3">Error de pago</p>
+                           </div>
+    
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

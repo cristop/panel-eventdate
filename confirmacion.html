@@ -26,9 +26,13 @@
         <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header bg-gray-light">
-                    <img src="img/confirmacion.svg" alt="" height="40">
-                    <span class="d-inline-block fw-bold ps-3">Confirmaciones de Asistencia<span class="c-secondary">.</span></span>
+                    <img src="img/confirmacion.svg" alt="" height="50" class="d-sm-block d-none">
+                    <div class="d-sm-block d-none"><span class="d-inline-block fw-bold ps-3 fs-sm-21">Confirmaciones de Asistencia<span class="c-secondary">.</span></span></div>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="d-sm-none d-flex align-items-center justify-content-between my-3 px-4">
+                    <span class="d-inline-block fw-bold fs-21">Confirmaciones de Asistencia<span class="c-secondary">.</span></span>
+                    <img src="img/confirmacion.svg" alt="" height="70">
                 </div>
                 <div class="modal-body">
                     <div class="table-responsive">
@@ -55,9 +59,13 @@
                         </table>
                     </div>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary rounded-5 bg-primary border-0 px-4" data-bs-dismiss="modal">Descargar PDF</button>
-                    <button type="button" class="btn btn-primary rounded-5 bg-primary border-0 px-4">Descargar Excel</button>
+                <div class="modal-footer d-sm-flex d-none">
+                    <button type="button" class="btn btn-secondary fw-700 rounded-5 bg-primary border-0 px-4" data-bs-dismiss="modal">Descargar PDF</button>
+                    <button type="button" class="btn btn-primary fw-700 rounded-5 bg-primary border-0 px-4">Descargar Excel</button>
+                </div>
+                <div class="modal-footer d-sm-none d-block">
+                    <button type="button" class="btn btn-secondary fw-700 w-100 rounded-5 bg-dark border-0 px-4 mb-2" data-bs-dismiss="modal">Descargar PDF</button>
+                    <button type="button" class="btn btn-secondary fw-700 w-100 rounded-5 bg-dark border-0 px-4">Descargar Excel</button>
                 </div>
             </div>
         </div>

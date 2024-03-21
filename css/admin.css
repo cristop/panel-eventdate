@@ -253,6 +253,21 @@ body {
     border-top-left-radius: 0px !important;
 }
 
+#panel_edit .form-check-input:checked{
+    background-color: #40CC65;
+    border-color: #40CC65;
+}
+
+#panel_edit .form-check{
+    border-end-end-radius: 0px !important;
+    border-start-end-radius: 0px !important;
+}
+
+#panel_edit .form-select{
+    border-start-start-radius: 0px !important;
+    border-end-start-radius: 0px !important;
+}
+
 /* END INTERNA MODELO */
 
 @media screen and (max-width: 1200px){
