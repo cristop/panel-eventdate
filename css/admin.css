@@ -402,6 +402,16 @@ body {
     .actions {
         left: 0;
     }
+
+    #plans .arrow-white{
+        transform: rotate(180deg);
+        transition: 0.5s;
+    }
+
+    #plans .collapsed .arrow-white{
+        transform: rotate(0deg);
+    }
+    
 }
 
 @media screen and (max-width: 400px) {}
