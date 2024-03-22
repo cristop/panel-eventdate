@@ -18,10 +18,10 @@
 
     <div class="container-fluid ">
         <!-- ACA VA LA IMAGEN DE FONDO -->
-        <div class="row justify-content-between position-relative image-bg">
+        <div class="row justify-content-between image-bg">
 
             <!-- SIDEBAR -->
-            <div class="col-sm-2 min-vh-100 bg-black sidebar text-light text-center px-2 fs-sm-14">
+            <div class="col-sm-2 min-vh-100 bg-black sidebar text-light text-center px-2 fs-sm-14 position-relative">
                 <a href="#" class="d-block pt-2 mb-5 px-3">
                     <img src="img/logo.svg" alt="" class="w-100 logo" />
                 </a>
@@ -84,7 +84,8 @@
                                 <input class="form-check-input rounded-pill ms-0" type="checkbox" value="" id="flexCheckDefault">
                                 <label class="form-check-label" for="flexCheckDefault"></label>
                             </div>
-                            <select class="form-select premium ms-1 bg-gray rounded-pill border-0 text-white fs-sm-16 fw-600 py-2" disabled aria-label="Default select example">
+                            <select class="form-select premium position-relative ms-1 bg-gray rounded-pill border-0 text-white fs-sm-16 fw-600 py-2" disabled aria-label="Default select example">
+                                <img src="img/home-panel/star.svg" alt="" class="position-absolute">
                                 <option class="" selected>Mesa de Regalos</option>
                                 <option class="" value="1">One</option>
                                 <option class="" value="2">Two</option>
@@ -103,6 +104,14 @@
                                 <option class="" value="3">Three</option>
                             </select>
                         </div>
+                    </div>
+                </div>
+
+                <div class="save border-shadow py-3 bg-black position-fixed bottom-0 start-0">
+                    <div class="d-flex gap-2 px-2">
+                        <button class="rounded-pill text-white bg-gray border-0 py-2 fw-600 px-4 w-100">Guardar Cambios</button>
+                       
+                        <button class="rounded-pill py-2 px-4 border-0 fw-600">Ver</button>
                     </div>
                 </div>
             </div>
