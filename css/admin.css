@@ -296,6 +296,10 @@ body {
     background-color: var(--c-primary)!important;
 }
 
+.sidebar {
+    width: 320px;
+}
+
 
 .sidebar .save {
     border-start-start-radius: 20px;
@@ -303,6 +307,18 @@ body {
     -webkit-box-shadow: -1px -10px 22px -4px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: -1px -10px 22px -4px rgba(0, 0, 0, 0.75);
     box-shadow: -1px -10px 22px -4px rgba(0, 0, 0, 0.75);
+}
+
+#options-edit .accordion-button:hover{
+    z-index: 0;
+}
+
+#options-edit .accordion-body img{
+    width: 100%;
+}
+
+#options-edit .accordion-button::after{
+    
 }
 
 /* END INTERNA MODELO */
@@ -561,4 +577,5 @@ body {
 
 }
 
-@media screen and (max-width: 400px) {}
+
+
