@@ -21,7 +21,7 @@ body {
 }
 
 .sidebar {
-    border-radius: 0px 35px 35px 0;
+    border-radius: 0px 35px 0px 0;
     padding-top: 40px;
 }
 
@@ -269,8 +269,35 @@ body {
     
 }
 
+#panel_edit .form-select{
+    background-image: url('/img/home-panel/arrow-white.svg');
+    background-position: right 0.99rem center;
+    background-size: 14px 12px;
+}
+
+#panel_edit .form-select.premium{
+    background-image: url('/img/home-panel/star.svg');
+    background-position: right 0.99rem center;
+    background-size: 14px 12px;
+}
+
+#panel_edit .form-select.vip{
+    background-image: url('/img/home-panel/corona.svg');
+    background-position: right 0.99rem center;
+    background-size: 14px 12px;
+}
+
+#panel_edit .form-check-input{
+    width: 1.2rem!important;
+    height: 1.2rem!important;
+}
+
+.save .bg-gray:hover{
+    background-color: var(--c-primary)!important;
+}
+
+
 .sidebar .save {
-    width: inherit;
     border-start-start-radius: 20px;
     border-start-end-radius: 20px;
     -webkit-box-shadow: -1px -10px 22px -4px rgba(0, 0, 0, 0.75);
