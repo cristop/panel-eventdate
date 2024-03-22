@@ -334,8 +334,8 @@ body {
     transform: rotate(180deg) translate(10px, 6px)!important;
 }
 
-#.s-edit .accordion-button:not(.collapsed){
-    box-shadow: none;
+#accordionPanelsStayOpenExample .accordion-item{
+    background-color: inherit!important;
 }
 
 /* END INTERNA MODELO */
