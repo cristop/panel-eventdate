@@ -309,16 +309,33 @@ body {
     box-shadow: -1px -10px 22px -4px rgba(0, 0, 0, 0.75);
 }
 
-#options-edit .accordion-button:hover{
+.options-edit .accordion-button:hover{
     z-index: 0;
 }
 
-#options-edit .accordion-body img{
+.options-edit .accordion-body img{
     width: 100%;
 }
 
-#options-edit .accordion-button::after{
-    
+.options-edit .accordion-button{
+    padding-top: 17px;
+    padding-bottom: 18px;
+    border-start-start-radius: 0px !important;
+    border-end-start-radius: 0px !important;
+}
+
+.options-edit .accordion-button::after{
+    background-image: url('/img/home-panel/arrow-white.svg');
+    background-size: 1rem;
+    transform: translateY(8px);
+}
+
+.accordion-button:not(.collapsed)::after{
+    transform: rotate(180deg) translate(10px, 6px)!important;
+}
+
+#.s-edit .accordion-button:not(.collapsed){
+    box-shadow: none;
 }
 
 /* END INTERNA MODELO */
