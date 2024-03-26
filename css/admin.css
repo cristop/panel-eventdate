@@ -277,13 +277,13 @@ body {
 
 #panel_edit .form-select.premium{
     background-image: url('/img/home-panel/star.svg');
-    background-position: right 0.99rem center;
+    background-position: right 2rem center;
     background-size: 14px 12px;
 }
 
 #panel_edit .form-select.vip{
     background-image: url('/img/home-panel/corona.svg');
-    background-position: right 0.99rem center;
+    background-position: right 2rem center;
     background-size: 14px 12px;
 }
 
@@ -297,7 +297,7 @@ body {
 }
 
 .sidebar {
-    width: 320px;
+    /* width: 320px; */
 }
 
 
@@ -354,9 +354,18 @@ body {
     filter: none;
 }
 
+.vip .accordion-button::after{
+    background-image: url(/img/corona.svg);
+    filter: none;
+}
+
 .h-primary:hover{
     background-color: var(--c-primary)!important;
     border: var(--c-primary);
+}
+
+.opacity_btn:hover{
+    opacity: 0.7;
 }
 
 /* END INTERNA MODELO */

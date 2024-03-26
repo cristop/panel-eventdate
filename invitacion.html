@@ -1,126 +1,337 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
-    <!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.helper.ie8.js"></script><![endif]-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
-    <link rel="stylesheet" type="text/css" href="css/admin.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+  <!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.helper.ie8.js"></script><![endif]-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+  <link rel="stylesheet" type="text/css" href="css/admin.css">
 </head>
+
 <body>
 
-    <div class="container-fluid ">
-        <!-- ACA VA LA IMAGEN DE FONDO -->
-        <div class="row justify-content-between position-relative image-bg" >
+  <div class="container-fluid ">
+    <!-- ACA VA LA IMAGEN DE FONDO -->
+    <div class="row justify-content-between position-relative image-bg">
 
-            <!-- SIDEBAR -->
-            <div class="col-sm-2 min-vh-100 bg-black sidebar text-light text-center px-2 fs-sm-14">
-                <a href="#" class="d-block pt-2 mb-5 px-3">
-                    <img src="img/logo.svg" alt="" class="w-100 logo" />
-                </a>
+      <!-- SIDEBAR -->
+      <div class="col-sm-2 min-vh-100 bg-black sidebar text-light text-center px-2 fs-sm-14">
+        <a href="#" class="d-block pt-2 mb-5 px-3">
+          <img src="img/logo.svg" alt="" class="w-100 logo" />
+        </a>
 
-                <div class="pt-5 pb-3">Dashboard</div>
+        <div class="pt-5 pb-3">Dashboard</div>
 
-                <a href="#" class="btn btn-primary bg-primary rounded-5 py-2 px-4 border-0 fs-sm-14 fw-bold ">Mis Invitaciones</a>
-            </div>
+        <a href="#" class="btn btn-primary bg-primary rounded-5 py-2 px-4 border-0 fs-sm-14 fw-bold ">Mis
+          Invitaciones</a>
+      </div>
 
+      <!-- Content -->
+      <div class="col-sm-10 py-5 px-sm-5 invitation">
 
-            <!-- Content -->
-            <div class="col-sm-10 py-5 px-sm-5 invitation">
-                
-                <div class="d-flex justify-content-between top-text pb-4 align-content-center ">
-                    <div class="fs-sm-24 fs-21 fw-bold ">Mis Invitaciones<span class="c-secondary">.</span></div>
-                    <div class="arrow">
-                        <img src="img/arrow-back.svg" alt="">
-                    </div>
-                    <div class="actions">
-                        <a href="#" class="d-inline-block p-2 bg-white rounded-3 ">
-                            <img src="img/user.svg" alt="" width="25" height="18" class="" />
-                        </a>
-                    </div>
-                    <nav class="navbar bg-body-tertiary">
-                        <div class="container-fluid">
-                          <a class="navbar-brand" href="#"></a>
-                          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon c-white"></span>
-                          </button>
-                          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                            <div class="offcanvas-header">
-                              <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
-                              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                            </div>
-                            <div class="offcanvas-body">
-                              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                                <li class="nav-item">
-                                  <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a class="nav-link" href="#">Mis invitaciones</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Dropdown
-                                  </a>
-                                  <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li>
-                                      <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                  </ul>
-                                </li>
-                              </ul>
-                              <form class="d-flex mt-3" role="search">
-                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                                <button class="btn btn-outline-success" type="submit">Search</button>
-                              </form>
-                            </div>
-                          </div>
-                        </div>
-                    </nav>
+        <div class="d-flex justify-content-between top-text pb-4 align-content-center ">
+          <div class="fs-sm-24 fs-21 fw-bold ">Mis Invitaciones<span class="c-secondary">.</span></div>
+          <div class="arrow">
+            <img src="img/arrow-back.svg" alt="">
+          </div>
+          <div class="actions">
+            <a href="#" class="d-inline-block p-2 bg-white rounded-3 ">
+              <img src="img/user.svg" alt="" width="25" height="18" class="" />
+            </a>
+          </div>
+          <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon c-white"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-
-                <div class="individual-invitation">
-                    <div class="pb-5">
-                        <div class="header-invitation text-center py-5 rounded-4 text-white fs-sm-48 lh-1 " style="background-image: url(img/invitation.jpg);">
-                            <h2 class="py-5 my-3 fs-24 position-relative fw-400">Mis Quinces <br>Sofia</h2>
-                        </div>
-                        <div class="template-details d-flex justify-content-between py-4 bg-white px-4 rounded-4 align-items-center">
-                            <div class="model">
-                                <div class="fs-sm-21  fw-bold ">Sofia</div>
-                                <div class="fs-sm-14">Modelo Aqua</div>
-                            </div>
-                            <div class="share">
-                                <a href="#" class="btn bg-primary fw-bold text-white rounded-5 px-5 py-2 me-2"><span>Editar invitación</span><img src="./img/edit.svg" /></a>
-                                <a href="#" class="btn bg-primary fw-bold text-white rounded-5 px-5 py-2 me-2"><span>Ver Invitación </span><img src="./img/eye.svg" /></a>
-                                <a href="#" class="btn bg-primary fw-bold text-white rounded-5 px-5 py-2"><span>Compartir</span> <img src="./img/share.svg" /></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="text-center actions actions-btn position-absolute w-100 pb-2">
-                        <a href="#" class="btn btn-dark rounded-5 fw-bold px-5 py-2 me-2">Ver Confirmados</a>
-                        <a href="#" class="btn btn-dark rounded-5 fw-bold px-5 py-2">Ver Música Recomendada</a>
-                        <a href="#" class="btn btn-dark rounded-5 fw-bold px-5 py-2">Transporte Privado</a>
-                    </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Mis invitaciones</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Dropdown
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <form class="d-flex mt-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
                 </div>
+              </div>
             </div>
+          </nav>
         </div>
+
+        <div class="individual-invitation">
+          <div class="pb-5">
+            <div class="header-invitation text-center py-5 rounded-4 text-white fs-sm-48 lh-1 "
+              style="background-image: url(img/invitation.jpg);">
+              <h2 class="py-5 my-3 fs-24 position-relative fw-400">Mis Quinces <br>Sofia</h2>
+            </div>
+            <div
+              class="template-details d-flex justify-content-between py-4 bg-white px-4 rounded-4 align-items-center">
+              <div class="model">
+                <div class="fs-sm-21  fw-bold ">Sofia</div>
+                <div class="fs-sm-14">Modelo Aqua</div>
+              </div>
+              <div class="share">
+                <a href="#" class="btn bg-primary opacity_btn fw-bold text-white rounded-5 px-5 py-2 me-2"><span>Editar
+                    invitación</span><img src="./img/edit.svg" /></a>
+                <a href="#" class="btn bg-primary opacity_btn fw-bold text-white rounded-5 px-5 py-2 me-2"><span>Ver
+                    Invitación </span><img src="./img/eye.svg" /></a>
+                <a href="#" type="button" data-bs-toggle="modal" data-bs-target="#modalIdShare"
+                  class="btn bg-primary opacity_btn fw-bold text-white rounded-5 px-5 py-2"><span>Compartir</span> <img
+                    src="./img/share.svg" /></a>
+              </div>
+              <!-- modal share -->
+              <div class="modal fade" id="modalIdShare" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false"
+                role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <h2 class="fs-sm-21 fw-bold text-center ">Comparte tu invitación con todos<span
+                          class="c-secondary">.</span></h2>
+                      <div class="text-center px-sm-5 mx-sm-5">
+                        <div class="fs-sm-14 mb-4">Es el momento perfecto para compartirla
+                          y comenzar a difundir la emoción de
+                          tu próximo evento.</div>
+                        <small class="d-block mb-2 fw-bold ">Link para compartir</small>
+                        <input type="text" value="https://eventdate.net/mis-quinces..."
+                          class="form-control rounded-4 py-2 shadow-sm border-light " />
+                        <input type="button" value="Compartir"
+                          class="text-white btn-dark bg-primary fw-bold border-0 rounded-5 mt-3 w-100 py-2">
+                        <div class="py-5 mt-2">
+                          <img src="img/share-invitation.svg" alt="" class="img-fluid ">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center actions actions-btn position-absolute w-100 pb-2">
+            <a href="#" class="btn btn-dark rounded-5 fw-bold px-5 py-2 me-2" data-bs-toggle="modal"
+              data-bs-target="#confirmation" type="button">Ver Confirmados</a>
+            <a href="#" type="button" data-bs-toggle="modal" data-bs-target="#music"
+              class="btn btn-dark rounded-5 fw-bold px-5 py-2">Ver Música Recomendada</a>
+            <a href="#" class="btn btn-dark rounded-5 fw-bold px-5 py-2" data-bs-toggle="modal"
+              data-bs-target="#transport" type="button">Transporte Privado</a>
+            <!-- modal music -->
+            <div class="modal fade" id="music" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false"
+              role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header bg-gray-light">
+                    <img src="img/music-modal.svg" alt="" height="45" class="d-sm-block d-none">
+                    <div class="d-sm-block d-none"><span class="d-inline-block fw-bold ps-3 fs-sm-21">Música
+                        Recomendada<span class="c-secondary">.</span></span></div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="d-sm-none d-flex align-items-center justify-content-between my-3 px-4">
+                    <span class="d-inline-block fw-bold fs-21">Música <br> Recomendada<span
+                        class="c-secondary">.</span></span>
+                    <img src="img/music-modal.svg" alt="" height="60">
+                  </div>
+                  <div class="modal-body">
+                    <div class="table-responsive">
+                      <table class="table">
+                        <thead>
+                          <tr class="bg-gray-light">
+                            <th scope="col">Canción</th>
+                            <th scope="col">Autor</th>
+                            <th scope="col">Link</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="">
+                            <td scope="row">R1C1</td>
+                            <td>R1C2</td>
+                            <td>R1C3</td>
+                          </tr>
+                          <tr class="">
+                            <td scope="row">Item</td>
+                            <td>Item</td>
+                            <td>Item</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="modal-footer d-sm-flex d-none">
+                    <button type="button" class="btn btn-secondary fw-700 rounded-5 bg-primary border-0 px-4"
+                      data-bs-dismiss="modal">Descargar PDF</button>
+                    <button type="button" class="btn btn-primary fw-700 rounded-5 bg-primary border-0 px-4">Descargar
+                      Excel</button>
+                  </div>
+                  <div class="modal-footer d-sm-none d-block">
+                    <button type="button" class="btn btn-secondary fw-700 w-100 rounded-5 bg-dark border-0 px-4 mb-2"
+                      data-bs-dismiss="modal">Descargar PDF</button>
+                    <button type="button"
+                      class="btn btn-secondary fw-700 w-100 rounded-5 bg-dark border-0 px-4">Descargar Excel</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- modal confimation -->
+            <div class="modal fade" id="confirmation" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false"
+              role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header bg-gray-light">
+                    <img src="img/confirmacion.svg" alt="" height="50" class="d-sm-block d-none">
+                    <div class="d-sm-block d-none"><span class="d-inline-block fw-bold ps-3 fs-sm-21">Confirmaciones de
+                        Asistencia<span class="c-secondary">.</span></span></div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="d-sm-none d-flex align-items-center justify-content-between my-3 px-4">
+                    <span class="d-inline-block fw-bold fs-21">Confirmaciones de Asistencia<span
+                        class="c-secondary">.</span></span>
+                    <img src="img/confirmacion.svg" alt="" height="70">
+                  </div>
+                  <div class="modal-body">
+                    <div class="table-responsive">
+                      <table class="table">
+                        <thead>
+                          <tr class="bg-gray-light">
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Asistencia</th>
+                            <th scope="col">Mensaje</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="">
+                            <td scope="row">R1C1</td>
+                            <td>R1C2</td>
+                            <td>R1C3</td>
+                          </tr>
+                          <tr class="">
+                            <td scope="row">Item</td>
+                            <td>Item</td>
+                            <td>Item</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="modal-footer d-sm-flex d-none">
+                    <button type="button" class="btn btn-secondary fw-700 rounded-5 bg-primary border-0 px-4"
+                      data-bs-dismiss="modal">Descargar PDF</button>
+                    <button type="button" class="btn btn-primary fw-700 rounded-5 bg-primary border-0 px-4">Descargar
+                      Excel</button>
+                  </div>
+                  <div class="modal-footer d-sm-none d-block">
+                    <button type="button" class="btn btn-secondary fw-700 w-100 rounded-5 bg-dark border-0 px-4 mb-2"
+                      data-bs-dismiss="modal">Descargar PDF</button>
+                    <button type="button"
+                      class="btn btn-secondary fw-700 w-100 rounded-5 bg-dark border-0 px-4">Descargar Excel</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- modal transport -->
+            <div class="modal fade" id="transport" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false"
+              role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header bg-gray-light">
+                    <img src="img/transporte.svg" alt="" height="52" class="d-sm-block d-none">
+                    <div class="d-sm-block d-none"><span class="d-inline-block fw-bold ps-3 fs-sm-21">Transporte
+                        Privado<span class="c-secondary">.</span></span></div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="d-sm-none d-flex align-items-center justify-content-between px-4">
+                    <span class="d-inline-block fw-bold fs-21">Transporte <br> Privado<span
+                        class="c-secondary">.</span></span>
+                    <img src="img/transporte.svg" alt="" height="100">
+                  </div>
+                  <div class="modal-body">
+                    <div class="table-responsive">
+                      <table class="table">
+                        <thead>
+                          <tr class="bg-gray-light">
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Horario</th>
+                            <th scope="col">Cantidad</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="">
+                            <td scope="row">R1C1</td>
+                            <td>R1C2</td>
+                            <td>R1C3</td>
+                          </tr>
+                          <tr class="">
+                            <td scope="row">Item</td>
+                            <td>Item</td>
+                            <td>Item</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="modal-footer d-sm-flex d-none">
+                    <button type="button" class="btn btn-secondary fw-700 rounded-5 bg-primary border-0 px-4"
+                      data-bs-dismiss="modal">Descargar PDF</button>
+                    <button type="button" class="btn btn-primary fw-700 rounded-5 bg-primary border-0 px-4">Descargar
+                      Excel</button>
+                  </div>
+                  <div class="modal-footer d-sm-none d-block">
+                    <button type="button" class="btn btn-secondary fw-700 w-100 rounded-5 bg-dark border-0 px-4 mb-2"
+                      data-bs-dismiss="modal">Descargar PDF</button>
+                    <button type="button"
+                      class="btn btn-secondary fw-700 w-100 rounded-5 bg-dark border-0 px-4">Descargar Excel</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-        crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
 </body>
+
 </html>

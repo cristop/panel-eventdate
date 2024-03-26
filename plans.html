@@ -38,6 +38,64 @@
                                     <img src="img/Icon ion-ios-arrow-down.svg" alt="" class="icon-arrow d-sm-block d-none">
                                     <a href="#collapse1" role="button" aria-expanded="false" data-bs-toggle="collapse" aria-controls="collapseArrow" class="d-sm-none d-block collapsed"><img src="img/Icon ion-ios-arrow-down.svg" class="arrow-white" alt=""></a>
                                 </div>
+                                <!-- modal payments -->
+                                <div class="modal fade" id="payments" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog"
+                                aria-labelledby="modalTitleId" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body p-5 d-flex justify-content-center">
+                                                <div class="bg d-flex flex-column justify-content-center h-100 text-center">
+                                                    <h2 class="fs-sm-24 mb-0 fs-21 fw-bold text-center text-dark">Realizar el pago<span
+                                                            style="color: #F1B20A;">.</span></h2>
+                            
+                                                    <p class="fs-sm-18 fw-600 mb-sm-3 mt-sm-4">Tarjeta de crédito o débito</p>
+                                                    <img src="img/payments.svg" class="mb-5" alt="">
+                                                    <div class="form text-start">
+                                                        <div class="mb-3">
+                                                            <label for="exampleFormControlInput1" class="form-label fs-sm-13">Número de
+                                                                tarjeta</label>
+                                                            <input type="text" required class="form-control rounded-pill py-2"
+                                                                id="exampleFormControlInput1" placeholder="123 123 123">
+                                                        </div>
+                                                        <div class="mb-3 row">
+                                                            <div class="col-sm-6">
+                                                                <label for="exampleFormControlInput1"
+                                                                    class="form-label fs-sm-13">Vencimiento</label>
+                                                                <input type="text" required class="form-control rounded-pill py-2"
+                                                                    id="exampleFormControlInput1" placeholder="DD/MM/AA">
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <label for="exampleFormControlInput1" class="form-label fs-sm-13">Código de
+                                                                    Seguridad</label>
+                                                                <input type="text" required class="form-control rounded-pill py-2"
+                                                                    id="exampleFormControlInput1" placeholder="123">
+                                                            </div>
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label for="exampleFormControlInput1" class="form-label fs-sm-13">Nombre del titular
+                                                                como aparece en la tarjeta</label>
+                                                            <input type="text" required class="form-control rounded-pill py-2"
+                                                                id="exampleFormControlInput1" placeholder="Maria López">
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label for="exampleFormControlInput1" class="form-label fs-sm-13">Documento del
+                                                                titular</label>
+                                                            <input type="text" required class="form-control rounded-pill py-2"
+                                                                id="exampleFormControlInput1" placeholder="999">
+                                                        </div>
+                                                        <button
+                                                            class="fw-bold w-100 bg-primary text-white border-0 px-5 py-3 rounded-pill mt-3">PAGAR</button>
+                                                        <p class="text-danger text-center fs-sm-11 mt-3">Error de pago</p>
+                                                    </div>
+                            
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="col-sm p-sm-4 mt-sm-0 mt-4 d-sm-block d-none">
@@ -107,7 +165,7 @@
                                 <div class="bg-primary bg-price d-flex flex-column justify-content-center align-items-center  rounded-4 h-100 p-3 text-center">
                                     <del class="fs-sm-18 text-white">$5000</del>
                                     <div class="text-center text-white fw-500 text-uppercase fs-sm-36">$5000</div>
-                                    <button class="btn w-100 rounded-pill bg-dark text-white fw-600 my-sm-0 px-4 my-2 w-auto d-sm-none d-block">COMPRAR PACK</button>
+                                    <button class="btn w-100 rounded-pill bg-dark text-white fw-600 my-sm-0 px-4 my-2 w-auto d-sm-none d-block" type="button" data-bs-toggle="modal" data-bs-target="#payments">COMPRAR PACK</button>
                                     <img src="img/Icon ion-ios-arrow-down.svg" alt="" class="icon-arrow d-sm-block d-none">
                                     <a href="#collapse2" role="button" aria-expanded="false" data-bs-toggle="collapse" aria-controls="collapseArrow" class="d-sm-none d-block collapsed"><img src="img/Icon ion-ios-arrow-down.svg" class="arrow-white" alt=""></a>
                                 </div>
@@ -187,7 +245,7 @@
                         </div>
 
                         <div class="col-sm-2 d-flex align-items-center">
-                            <button class="btn w-100 rounded-pill bg-primary text-white fw-600 mx-auto my-4 d-sm-block d-none">COMPRAR PACK</button>
+                            <button class="btn w-100 rounded-pill bg-primary text-white fw-600 mx-auto my-4 d-sm-block d-none" type="button" data-bs-toggle="modal" data-bs-target="#payments">COMPRAR PACK</button>
                         </div>
                     </div>
                 </div>
@@ -200,7 +258,7 @@
                                 <div class="bg-dark bg-price d-flex flex-column justify-content-center align-items-center  rounded-4 h-100 p-3 text-center">
                                     <del class="fs-sm-18 text-white">$5000</del>
                                     <div class="text-center text-white fw-500 text-uppercase fs-sm-36">$20.000</div>
-                                    <button class="btn w-100 rounded-pill bg-primary text-white fw-600 my-sm-0 px-4 my-2 w-auto d-sm-none d-block">COMPRAR PACK</button>
+                                    <button class="btn w-100 rounded-pill bg-primary text-white fw-600 my-sm-0 px-4 my-2 w-auto d-sm-none d-block" type="button" data-bs-toggle="modal" data-bs-target="#payments">COMPRAR PACK</button>
                                     <img src="img/Icon ion-ios-arrow-down.svg" alt="" class="icon-arrow d-sm-block d-none">
                                     <a href="#collapse3" role="button" aria-expanded="false" data-bs-toggle="collapse" aria-controls="collapseArrow" class="d-sm-none d-block collapsed"><img src="img/Icon ion-ios-arrow-down.svg" class="arrow-white" alt=""></a>
                                 </div>
@@ -293,7 +351,7 @@
                         </div>
 
                         <div class="col-sm-2 d-flex align-items-center">
-                            <button class="btn w-100 rounded-pill bg-primary text-white fw-600 mx-auto my-4 d-sm-block d-none">COMPRAR PACK</button>
+                            <button class="btn w-100 rounded-pill bg-primary text-white fw-600 mx-auto my-4 d-sm-block d-none" type="button" data-bs-toggle="modal" data-bs-target="#payments">COMPRAR PACK</button>
                         </div>
                     </div>
                 </div>
