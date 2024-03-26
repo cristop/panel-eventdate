@@ -354,6 +354,11 @@ body {
     filter: none;
 }
 
+.h-primary:hover{
+    background-color: var(--c-primary)!important;
+    border: var(--c-primary);
+}
+
 /* END INTERNA MODELO */
 
 @media screen and (max-width: 1200px) {
