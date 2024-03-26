@@ -334,8 +334,24 @@ body {
     transform: rotate(180deg) translate(10px, 6px)!important;
 }
 
-#accordionPanelsStayOpenExample .accordion-item{
+#panel_sections .accordion-item{
     background-color: inherit!important;
+}
+
+.accordion .accordion-button{
+    border-start-start-radius: 0px !important;
+    border-end-start-radius: 0px !important;
+    padding-top: 18px;
+}
+
+.accordion-button::after{
+    filter: brightness(0) invert(100%) sepia(3%) saturate(12%) hue-rotate(103deg) brightness(105%) contrast(105%);
+    width: 2rem;
+}
+
+.premium .accordion-button::after{
+    background-image: url(/img/star.svg);
+    filter: none;
 }
 
 /* END INTERNA MODELO */

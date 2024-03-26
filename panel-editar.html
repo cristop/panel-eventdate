@@ -31,22 +31,25 @@
 
                 <div id="panel_edit">
                     <div class="edit">
-                        <div class="d-flex mb-2">
-                            <div
-                                class="form-check rounded-pill d-flex justify-content-center align-items-center bg-white mb-0 p-3">
-                                <input class="form-check-input rounded-pill ms-0" type="checkbox" value=""
-                                    id="flexCheckDefault">
-                                <label class="form-check-label" for="flexCheckDefault"></label>
+                        <div class="position-relative">
+                            <a href="#" class="position-absolute d-block w-100 h-100"></a>
+                            <div class="d-flex mb-2">
+                                <div
+                                    class="form-check rounded-pill d-flex justify-content-center align-items-center bg-white mb-0 p-3">
+                                    <input class="form-check-input rounded-pill ms-0" type="checkbox" value=""
+                                        id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault"></label>
+                                </div>
+                                <select
+                                    class="form-select premium position-relative ms-1 bg-gray rounded-pill border-0 text-white fs-sm-16 fw-600 py-2"
+                                    disabled aria-label="Default select example">
+                                    <img src="img/home-panel/star.svg" alt="" class="position-absolute">
+                                    <option class="" selected>Mesa de Regalos</option>
+                                    <option class="" value="1">One</option>
+                                    <option class="" value="2">Two</option>
+                                    <option class="" value="3">Three</option>
+                                </select>
                             </div>
-                            <select
-                                class="form-select premium position-relative ms-1 bg-gray rounded-pill border-0 text-white fs-sm-16 fw-600 py-2"
-                                disabled aria-label="Default select example">
-                                <img src="img/home-panel/star.svg" alt="" class="position-absolute">
-                                <option class="" selected>Mesa de Regalos</option>
-                                <option class="" value="1">One</option>
-                                <option class="" value="2">Two</option>
-                                <option class="" value="3">Three</option>
-                            </select>
                         </div>
                         <div class="d-flex mb-2">
                             <div
@@ -65,29 +68,34 @@
                             </select>
                         </div>
                         <!-- other -->
-                        <div class="accordion" id="accordionPanelsStayOpenExample">
+                        <div class="accordion" id="panel_sections">
+                            <!-- accordation 1 -->
                             <div class="accordion-item mb-2 border-0">
                                 <div class="d-flex gap-1">
-                                    <div class="form-check h-100 rounded-pill d-flex justify-content-center align-items-center bg-white mb-0 p-3">
+                                    <div
+                                        class="form-check h-100 rounded-pill d-flex justify-content-center align-items-center bg-white mb-0 p-3">
                                         <input class="form-check-input rounded-pill ms-0" type="checkbox" value=""
-                                            id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault"></label>
+                                            id="flexCheckDefault2">
+                                        <label class="form-check-label" for="flexCheckDefault2"></label>
                                     </div>
                                     <h2 class="accordion-header w-100">
-                                        <button class="accordion-button rounded-pill" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                                          Itinerario
+                                        <button class="accordion-button rounded-pill bg-primary text-white fw-600 collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false"
+                                            aria-controls="panelsStayOpen-collapseOne">
+                                            Itinerario
                                         </button>
                                     </h2>
                                 </div>
-                                <div id="panelsStayOpen-collapseOne" class="accordion-collapse bg-black border-0 collapse show">
-                                    <div class="accordion-body text-white">
+                                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
                                         <div class="form-group text-start my-4">
                                             <label class="text-white" for="">Ej: Juan y maria</label>
                                             <input class="w-100 rounded-pill py-2 px-3 mb-3" type="text">
                                             <label class="text-white" for="">Ej: ¡Nos casamos!</label>
                                             <input class="w-100 rounded-pill py-2 px-3 mb-3" type="text">
                                         </div>
-                                        <p class="text-white">Agrega una foto para la portada y deja una impresión duradera desde el primer momento</p>
+                                        <p class="text-white">Agrega una foto para la portada y deja una impresión
+                                            duradera desde el primer momento</p>
                                         <div class="d-flex gap-1">
                                             <div class="position-relative">
                                                 <img src="img/home-panel/portada2.jpg" class="w-100" alt="">
@@ -101,31 +109,127 @@
                                     </div>
                                 </div>
                             </div>
+                            <!-- accordarion 2 -->
                             <div class="accordion-item mb-2 border-0">
-                              <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                                  Accordion Item #2
-                                </button>
-                              </h2>
-                              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
-                                <div class="accordion-body">
-                                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                <div class="d-flex gap-1">
+                                    <div
+                                        class="form-check h-100 rounded-pill d-flex justify-content-center align-items-center bg-white mb-0 p-3">
+                                        <input class="form-check-input rounded-pill ms-0" type="checkbox" value=""
+                                            id="flexCheckDefault2">
+                                        <label class="form-check-label" for="flexCheckDefault2"></label>
+                                    </div>
+                                    <h2 class="accordion-header w-100">
+                                        <button class="accordion-button rounded-pill bg-primary text-white fw-600 collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                                            aria-controls="panelsStayOpen-collapseTwo">
+                                            Mesa de Regalos
+                                        </button>
+                                    </h2>
                                 </div>
-                              </div>
+                                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <div class="form-group text-start my-4">
+                                            <label class="text-white" for="">Ej: Juan y maria</label>
+                                            <input class="w-100 rounded-pill py-2 px-3 mb-3" type="text">
+                                            <label class="text-white" for="">Ej: ¡Nos casamos!</label>
+                                            <input class="w-100 rounded-pill py-2 px-3 mb-3" type="text">
+                                        </div>
+                                        <p class="text-white">Agrega una foto para la portada y deja una impresión
+                                            duradera desde el primer momento</p>
+                                        <div class="d-flex gap-1">
+                                            <div class="position-relative">
+                                                <img src="img/home-panel/portada2.jpg" class="w-100" alt="">
+                                                <p class="text-white py-2 fs-sm-12">Imagen para smartphone</p>
+                                            </div>
+                                            <div class="position-relative">
+                                                <img src="img/home-panel/portada2.jpg" class="w-100" alt="">
+                                                <p class="text-white py-2 fs-sm-12">Imagen para Escritorio</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+                            <!-- accordarion 3 -->
                             <div class="accordion-item mb-2 border-0">
-                              <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                                  Accordion Item #3
-                                </button>
-                              </h2>
-                              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
-                                <div class="accordion-body">
-                                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                <div class="d-flex gap-1">
+                                    <div
+                                        class="form-check h-100 rounded-pill d-flex justify-content-center align-items-center bg-white mb-0 p-3">
+                                        <input class="form-check-input rounded-pill ms-0" type="checkbox" value=""
+                                            id="flexCheckDefault2">
+                                        <label class="form-check-label" for="flexCheckDefault2"></label>
+                                    </div>
+                                    <h2 class="accordion-header w-100">
+                                        <button class="accordion-button rounded-pill bg-primary text-white fw-600 collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                                            aria-controls="panelsStayOpen-collapseThree">
+                                            Galería
+                                        </button>
+                                    </h2>
                                 </div>
-                              </div>
+                                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <div class="form-group text-start my-4">
+                                            <label class="text-white" for="">Ej: Juan y maria</label>
+                                            <input class="w-100 rounded-pill py-2 px-3 mb-3" type="text">
+                                            <label class="text-white" for="">Ej: ¡Nos casamos!</label>
+                                            <input class="w-100 rounded-pill py-2 px-3 mb-3" type="text">
+                                        </div>
+                                        <p class="text-white">Agrega una foto para la portada y deja una impresión
+                                            duradera desde el primer momento</p>
+                                        <div class="d-flex gap-1">
+                                            <div class="position-relative">
+                                                <img src="img/home-panel/portada2.jpg" class="w-100" alt="">
+                                                <p class="text-white py-2 fs-sm-12">Imagen para smartphone</p>
+                                            </div>
+                                            <div class="position-relative">
+                                                <img src="img/home-panel/portada2.jpg" class="w-100" alt="">
+                                                <p class="text-white py-2 fs-sm-12">Imagen para Escritorio</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                          </div>
+                            <!-- accordarion 4 -->
+                            <div class="accordion-item premium mb-2 border-0">
+                                <div class="d-flex gap-1">
+                                    <div
+                                        class="form-check h-100 rounded-pill d-flex justify-content-center align-items-center bg-white mb-0 p-3">
+                                        <input class="form-check-input rounded-pill ms-0" type="checkbox" value=""
+                                            id="flexCheckDefault2">
+                                        <label class="form-check-label" for="flexCheckDefault2"></label>
+                                    </div>
+                                    <h2 class="accordion-header w-100">
+                                        <button class="accordion-button rounded-pill bg-gray text-white fw-600 collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
+                                            aria-controls="panelsStayOpeive">
+                                            Transporte Privado
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="panelsStayOpen-collapseFive" class="accordion-collapse pay collapse">
+                                    <div class="accordion-body">
+                                        <div class="form-group text-start my-4">
+                                            <label class="text-white" for="">Ej: Juan y maria</label>
+                                            <input class="w-100 rounded-pill py-2 px-3 mb-3" type="text">
+                                            <label class="text-white" for="">Ej: ¡Nos casamos!</label>
+                                            <input class="w-100 rounded-pill py-2 px-3 mb-3" type="text">
+                                        </div>
+                                        <p class="text-white">Agrega una foto para la portada y deja una impresión
+                                            duradera desde el primer momento</p>
+                                        <div class="d-flex gap-1">
+                                            <div class="position-relative">
+                                                <img src="img/home-panel/portada2.jpg" class="w-100" alt="">
+                                                <p class="text-white py-2 fs-sm-12">Imagen para smartphone</p>
+                                            </div>
+                                            <div class="position-relative">
+                                                <img src="img/home-panel/portada2.jpg" class="w-100" alt="">
+                                                <p class="text-white py-2 fs-sm-12">Imagen para Escritorio</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
                     </div>
                 </div>
@@ -153,6 +257,14 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+
+    <script>
+        // Encuentra todos los elementos con la clase collapseOne y elimina la clase show
+        var collapseElements = document.querySelectorAll('.pay');
+        collapseElements.forEach(function(element) {
+        element.classList.remove('show');
+        });
+    </script>
 
 
 </body>
