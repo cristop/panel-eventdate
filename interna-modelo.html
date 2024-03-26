@@ -8,8 +8,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.0.9/dist/css/splide.min.css">
     <!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.helper.ie8.js"></script><![endif]-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
     <link rel="stylesheet" type="text/css" href="css/admin.css">
 </head>
 
@@ -87,47 +88,40 @@
                     </nav>
                 </div>
 
-                <div div class="carousel slide row" data-bs-ride="carousel" id="carouselExampleCaptions">
+                <div class="row" data-bs-ride="" id="">
                     <div class="col-sm-2">
-                        <!-- thumbnail -->
-                        <!-- <div class="customize-tools">
-                            <ul class="thumbnails" id="customize-thumbnails" aria-label="Carousel Pagination">
-                                <li data-nav="0" aria-label="Carousel Page 1" aria-controls="customize" class=""
-                                    tabindex="-1">
-                                    <img src="img/bg-model2.png" class="rounded-3" alt="" width="600"
-                                        height="400">
+                        <div class="splide splide__thumbnails">
+                            <div class="splide__track">
+                              <ul class="splide__list d-block">
+                                <li class="splide__slide">
+                                  <img src="img/home-panel/bg-model.jpg" alt="Thumbnail 1">
                                 </li>
-                                <li data-nav="1" aria-label="Carousel Page 2" aria-controls="customize" class=""
-                                    tabindex="-1">
-                                    <img src="img/bg-model2.png" class="rounded-3" alt="" width="600"
-                                        height="400">
+                                <li class="splide__slide">
+                                  <img src="img/home-panel/bg-model.jpg" alt="Thumbnail 2">
                                 </li>
-                                <li data-nav="2" aria-label="Carousel Page 3" aria-controls="customize" class=""
-                                    tabindex="-1">
-                                    <img src="img/bg-model2.png" class="rounded-3" alt="" width="600"
-                                        height="400">
+                                <li class="splide__slide">
+                                  <img src="img/home-panel/bg-model.jpg" alt="Thumbnail 3">
                                 </li>
-                                <li data-nav="3" aria-label="Carousel Page 4 (Current Slide)" aria-controls="customize"
-                                    class="tns-nav-active">
-                                    <img src="img/bg-model2.png" class="rounded-3" alt="" width="600"
-                                        height="400">
-                                </li>
-                                <li data-nav="4" aria-label="Carousel Page 5" aria-controls="customize" class=""
-                                    tabindex="-1">
-                                    <img src="img/bg-model2.png" class="rounded-3" alt="" width="600"
-                                        height="400">
-                                </li>
-                            </ul>
-                        </div> -->
+                              </ul>
+                            </div>
+                          </div>
                     </div>
                     <!-- carousel -->
                     <div class="col-sm-5">
-                        <div class="model_interna_slider">
-                            <div class="item"><img src="img/bg-model2.png" alt=""></div>
-                            <div class="item"><img src="img/bg-model2.png" alt=""></div>
-                            <div class="item"><img src="img/bg-model2.png" alt=""></div>
-                            <div class="item"><img src="img/bg-model2.png" alt=""></div>
-                            <div class="item"><img src="img/bg-model2.png" alt=""></div>
+                        <div class="splide">
+                            <div class="splide__track">
+                                <ul class="splide__list ">
+                                    <li class="splide__slide">
+                                        <img src="img/home-panel/bg-model.jpg" alt="Slide 1">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="img/home-panel/bg-model.jpg" alt="Slide 2">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="img/home-panel/bg-model.jpg" alt="Slide 3">
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                     <div class="col-sm-5">
@@ -252,9 +246,47 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          // Inicializar Splide principal
+          var primarySplide = new Splide('.splide', {
+            type: 'fade', // Tipo de transición
+            heightRatio: 0.5, // Relación de altura (opcional)
+            pagination: false, // Desactivar paginación
+            arrows: true, // Desactivar flechas
+            cover: true, // Cubrir todo el área visible con la imagen (opcional)
+            breakpoints: {
+              600: {
+                heightRatio: 0.8 // Ajuste de la relación de altura para dispositivos más pequeños (opcional)
+              }
+            }
+          }).mount();
+      
+          // Inicializar Splide de miniaturas
+          var thumbnailSplide = new Splide('.splide__thumbnails', {
+            fixedWidth: 110, // Ancho fijo de miniaturas
+            fixedHeight: 60, // Altura fija de miniaturas
+            isNavigation: true, // Hacer que las miniaturas actúen como navegación
+            gap: 10, // Espacio entre miniaturas
+            focus: 'center', // Centrar miniatura activa
+            pagination: false, // Desactivar paginación
+            breakpoints: {
+              600: {
+                fixedWidth: 70, // Ajuste de ancho fijo para dispositivos más pequeños (opcional)
+                fixedHeight: 40 // Ajuste de altura fija para dispositivos más pequeños (opcional)
+              }
+            }
+          }).mount();
+      
+          // Sincronizar Splide principal con las miniaturas
+          primarySplide.sync(thumbnailSplide);
+        });
+      </scrmodel
 
 
     <script>

@@ -266,34 +266,34 @@ body {
 #panel_edit .form-select {
     border-start-start-radius: 0px !important;
     border-end-start-radius: 0px !important;
-    
+
 }
 
-#panel_edit .form-select{
+#panel_edit .form-select {
     background-image: url('/img/home-panel/arrow-white.svg');
     background-position: right 0.99rem center;
     background-size: 14px 12px;
 }
 
-#panel_edit .form-select.premium{
+#panel_edit .form-select.premium {
     background-image: url('/img/home-panel/star.svg');
     background-position: right 2rem center;
     background-size: 14px 12px;
 }
 
-#panel_edit .form-select.vip{
+#panel_edit .form-select.vip {
     background-image: url('/img/home-panel/corona.svg');
     background-position: right 2rem center;
     background-size: 14px 12px;
 }
 
-#panel_edit .form-check-input{
-    width: 1.2rem!important;
-    height: 1.2rem!important;
+#panel_edit .form-check-input {
+    width: 1.2rem !important;
+    height: 1.2rem !important;
 }
 
-.save .bg-gray:hover{
-    background-color: var(--c-primary)!important;
+.save .bg-gray:hover {
+    background-color: var(--c-primary) !important;
 }
 
 .sidebar {
@@ -309,63 +309,87 @@ body {
     box-shadow: -1px -10px 22px -4px rgba(0, 0, 0, 0.75);
 }
 
-.options-edit .accordion-button:hover{
+.options-edit .accordion-button:hover {
     z-index: 0;
 }
 
-.options-edit .accordion-body img{
+.options-edit .accordion-body img {
     width: 100%;
 }
 
-.options-edit .accordion-button{
+.options-edit .accordion-button {
     padding-top: 17px;
     padding-bottom: 18px;
     border-start-start-radius: 0px !important;
     border-end-start-radius: 0px !important;
 }
 
-.options-edit .accordion-button::after{
+.options-edit .accordion-button::after {
     background-image: url('/img/home-panel/arrow-white.svg');
     background-size: 1rem;
     transform: translateY(8px);
 }
 
-.accordion-button:not(.collapsed)::after{
-    transform: rotate(180deg) translate(10px, 6px)!important;
+.accordion-button:not(.collapsed)::after {
+    transform: rotate(180deg) translate(10px, 6px) !important;
 }
 
-#panel_sections .accordion-item{
-    background-color: inherit!important;
+#panel_sections .accordion-item {
+    background-color: inherit !important;
 }
 
-.accordion .accordion-button{
+.accordion .accordion-button {
     border-start-start-radius: 0px !important;
     border-end-start-radius: 0px !important;
     padding-top: 18px;
 }
 
-.accordion-button::after{
+.accordion-button::after {
     filter: brightness(0) invert(100%) sepia(3%) saturate(12%) hue-rotate(103deg) brightness(105%) contrast(105%);
     width: 2rem;
 }
 
-.premium .accordion-button::after{
+.premium .accordion-button::after {
     background-image: url(/img/star.svg);
     filter: none;
 }
 
-.vip .accordion-button::after{
+.vip .accordion-button::after {
     background-image: url(/img/corona.svg);
     filter: none;
 }
 
-.h-primary:hover{
-    background-color: var(--c-primary)!important;
+.h-primary:hover {
+    background-color: var(--c-primary) !important;
     border: var(--c-primary);
 }
 
-.opacity_btn:hover{
+.opacity_btn:hover {
     opacity: 0.7;
+}
+
+/* CARROUSEL */
+
+.splide{
+    visibility: visible;
+}
+
+.splide__thumbnails {
+    margin-top: 20px;
+}
+
+.splide__thumbnails .splide__slide {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.splide__thumbnails .splide__slide img {
+    width: 100px;
+    /* Ancho personalizado de miniaturas */
+    height: auto;
+    /* Altura automática */
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 /* END INTERNA MODELO */
@@ -623,6 +647,3 @@ body {
     }
 
 }
-
-
-
