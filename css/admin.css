@@ -481,7 +481,7 @@ body {
     }
 
     .col-sm-10.py-5.px-sm-5 {
-        padding: 0;
+        /* padding: 0; */
     }
 
     .individual-invitation .pb-5 {
@@ -573,6 +573,20 @@ body {
         background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(255, 255, 255, 0.1) 120%);
         z-index: 1;
     }
+
+    .most-valued .card{
+        width: auto!important;
+    }
+
+    /* carousel home */
+
+    .individual-invitation-mobile .splide__list{
+        transform-style: inherit;
+    }
+
+    .individual-invitation-mobile .splide__slide img{
+        vertical-align: inherit;
+    }
 }
 
 
@@ -655,7 +669,7 @@ body {
     }
 
     .col-sm-10.py-5.px-sm-5 {
-        padding: 0;
+        /* padding: 0; */
     }
 
     .individual-invitation .pb-5 {

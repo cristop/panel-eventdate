@@ -9,6 +9,8 @@
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.helper.ie8.js"></script><![endif]-->
+    <!-- Incluir CSS de Splide para carrousel-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.0.9/dist/css/splide.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
     <link rel="stylesheet" type="text/css" href="css/admin.css">
 </head>
@@ -90,7 +92,7 @@
                     </nav>
                 </div>
 
-                <div class="individual-invitation">
+                <div class="individual-invitation d-sm-block d-none">
                     <div class="pb-5">
                         <div class="header-invitation text-center rounded-4 text-white fs-sm-48 lh-1 "
                             style="background-image: url(img/bg-home.jpg);">
@@ -99,25 +101,29 @@
                                 <div class="col-sm-auto w-auto align-items-center d-flex flex-column">
                                     <div
                                         class="bg-primary d-flex align-items-center justify-content-center p-3 rounded-3">
-                                        <img src="img/heart-landing.svg" alt="" class=""></div>
+                                        <img src="img/heart-landing.svg" alt="" class="">
+                                    </div>
                                     <p class="fs-sm-16 fw-600 mt-3">Boda</p>
                                 </div>
                                 <div class="col-sm-auto w-auto align-items-center d-flex flex-column">
                                     <div
                                         class="bg-primary d-flex align-items-center justify-content-center p-3 rounded-3">
-                                        <img src="img/cumpleaños-landing.svg" alt="" class=""></div>
+                                        <img src="img/cumpleaños-landing.svg" alt="" class="">
+                                    </div>
                                     <p class="fs-sm-16 fw-600 mt-3">Cumpleaños</p>
                                 </div>
                                 <div class="col-sm-auto w-auto align-items-center d-flex flex-column">
                                     <div
                                         class="bg-primary d-flex align-items-center justify-content-center p-3 rounded-3">
-                                        <img src="img/quinces-landing.svg" alt="" class=""></div>
+                                        <img src="img/quinces-landing.svg" alt="" class="">
+                                    </div>
                                     <p class="fs-sm-16 fw-600 mt-3">Quinces</p>
                                 </div>
                                 <div class="col-sm-auto w-auto align-items-center d-flex flex-column">
                                     <div
                                         class="bg-primary d-flex align-items-center justify-content-center p-3 rounded-3">
-                                        <img src="img/empresariales.svg" alt="" class=""></div>
+                                        <img src="img/empresariales.svg" alt="" class="">
+                                    </div>
                                     <p class="fs-sm-16 fw-600 mt-3">Empresarial</p>
                                 </div>
                             </div>
@@ -126,12 +132,107 @@
                     </div>
                 </div>
 
+                <div class="d-sm-none d-block individual-invitation-mobile">
+                    <h2 class="text-center fw-800 fs-24 py-4 mb-3">¿Qué vas a festejar?</h2>
 
-                <div class="wedding">
+                    <div>
+
+                        <div class="splide splide__thumbnails" id="thumbnail-carousel">
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li class="splide__slide">
+                                        <div class="col-sm-auto w-auto align-items-center d-flex flex-column">
+                                            <div
+                                                class="bg-primary d-flex align-items-center justify-content-center p-3 rounded-3">
+                                                <img src="img/heart-landing.svg" alt="" class="">
+                                            </div>
+                                            <p class="fs-sm-16 fw-600 mt-3">Boda</p>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="col-sm-auto w-auto align-items-center d-flex flex-column">
+                                            <div
+                                                class="bg-primary d-flex align-items-center justify-content-center p-3 rounded-3">
+                                                <img src="img/heart-landing.svg" alt="" class="">
+                                            </div>
+                                            <p class="fs-sm-16 fw-600 mt-3">Boda</p>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="col-sm-auto w-auto align-items-center d-flex flex-column">
+                                            <div
+                                                class="bg-primary d-flex align-items-center justify-content-center p-3 rounded-3">
+                                                <img src="img/heart-landing.svg" alt="" class="">
+                                            </div>
+                                            <p class="fs-sm-16 fw-600 mt-3">Boda</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="splide" id="main-carousel">
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li class="splide__slide">
+                                        <div class="col-sm-auto pb-5">
+                                            <div class="card border-shadow border-0 rounded-4 p-2" style="width: 18rem;">
+                                                <div class="position-relative img-card">
+                                                    <img src="img/home-modelo-boho.jpg" class="card-img-top" alt="...">
+                                                    <p class="score bg-dark rounded-pill text-white position-absolute px-3"><img
+                                                            class="me-1" src="img/star.svg" alt="">4,6</p>
+                                                </div>
+                                                <div class="card-body">
+                                                    <h5 class="card-title fw-700">Modelo Boho</h5>
+                                                    <p class="card-text">Etiqueta 1, Etiqueta 2</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="col-sm-auto pb-5">
+                                            <div class="card border-shadow border-0 rounded-4 p-2" style="width: 18rem;">
+                                                <div class="position-relative img-card">
+                                                    <img src="img/home-modelo-boho.jpg" class="card-img-top" alt="...">
+                                                    <p class="score bg-dark rounded-pill text-white position-absolute px-3"><img
+                                                            class="me-1" src="img/star.svg" alt="">4,6</p>
+                                                </div>
+                                                <div class="card-body">
+                                                    <h5 class="card-title fw-700">Modelo Boho</h5>
+                                                    <p class="card-text">Etiqueta 1, Etiqueta 2</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="col-sm-auto pb-5">
+                                            <div class="card border-shadow border-0 rounded-4 p-2" style="width: 18rem;">
+                                                <div class="position-relative img-card">
+                                                    <img src="img/home-modelo-boho.jpg" class="card-img-top" alt="...">
+                                                    <p class="score bg-dark rounded-pill text-white position-absolute px-3"><img
+                                                            class="me-1" src="img/star.svg" alt="">4,6</p>
+                                                </div>
+                                                <div class="card-body">
+                                                    <h5 class="card-title fw-700">Modelo Boho</h5>
+                                                    <p class="card-text">Etiqueta 1, Etiqueta 2</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="wedding d-sm-block d-none">
                     <div class="py-3">
                         <div class="d-flex justify-content-between align-items-center">
                             <h2 class="fs-sm-24 mb-0 fs-21 fw-bold text-start text-dark">Bodas<span
-                                style="color: #F1B20A;">.</span></h2>
+                                    style="color: #F1B20A;">.</span></h2>
                             <a href="#" class="text-decoration-underline text-dark btn-underline">ver todo bodas</a>
                         </div>
                         <div class="my-4 position-relative">
@@ -141,7 +242,7 @@
                                         <div class="position-relative img-card">
                                             <img src="img/home-modelo-boho.jpg" class="card-img-top" alt="...">
                                             <p class="score bg-dark rounded-pill text-white position-absolute px-3"><img
-                                                class="me-1" src="img/star.svg" alt="">4,6</p>
+                                                    class="me-1" src="img/star.svg" alt="">4,6</p>
                                         </div>
                                         <div class="card-body">
                                             <h5 class="card-title fw-700">Modelo Boho</h5>
@@ -154,7 +255,7 @@
                                         <div class="position-relative img-card">
                                             <img src="img/home-modelo-boho.jpg" class="card-img-top" alt="...">
                                             <p class="score bg-dark rounded-pill text-white position-absolute px-3"><img
-                                                class="me-1" src="img/star.svg" alt="">4,6</p>
+                                                    class="me-1" src="img/star.svg" alt="">4,6</p>
                                         </div>
                                         <div class="card-body">
                                             <h5 class="card-title fw-700">Modelo Boho</h5>
@@ -167,7 +268,7 @@
                                         <div class="position-relative img-card">
                                             <img src="img/home-modelo-boho.jpg" class="card-img-top" alt="...">
                                             <p class="score bg-dark rounded-pill text-white position-absolute px-3"><img
-                                                class="me-1" src="img/star.svg" alt="">4,6</p>
+                                                    class="me-1" src="img/star.svg" alt="">4,6</p>
                                         </div>
                                         <div class="card-body">
                                             <h5 class="card-title fw-700">Modelo Boho</h5>
@@ -180,7 +281,7 @@
                                         <div class="position-relative img-card">
                                             <img src="img/home-modelo-boho.jpg" class="card-img-top" alt="...">
                                             <p class="score bg-dark rounded-pill text-white position-absolute px-3"><img
-                                                class="me-1" src="img/star.svg" alt="">4,6</p>
+                                                    class="me-1" src="img/star.svg" alt="">4,6</p>
                                         </div>
                                         <div class="card-body">
                                             <h5 class="card-title fw-700">Modelo Boho</h5>
@@ -193,7 +294,7 @@
                                         <div class="position-relative img-card">
                                             <img src="img/home-modelo-boho.jpg" class="card-img-top" alt="...">
                                             <p class="score bg-dark rounded-pill text-white position-absolute px-3"><img
-                                                class="me-1" src="img/star.svg" alt="">4,6</p>
+                                                    class="me-1" src="img/star.svg" alt="">4,6</p>
                                         </div>
                                         <div class="card-body">
                                             <h5 class="card-title fw-700">Modelo Boho</h5>
@@ -206,7 +307,7 @@
                                         <div class="position-relative img-card">
                                             <img src="img/home-modelo-boho.jpg" class="card-img-top" alt="...">
                                             <p class="score bg-dark rounded-pill text-white position-absolute px-3"><img
-                                                class="me-1" src="img/star.svg" alt="">4,6</p>
+                                                    class="me-1" src="img/star.svg" alt="">4,6</p>
                                         </div>
                                         <div class="card-body">
                                             <h5 class="card-title fw-700">Modelo Boho</h5>
@@ -222,84 +323,90 @@
                 <div class="most-valued">
                     <div class="py-3">
                         <h2 class="fs-sm-24 mb-0 py-2 fs-21 fw-bold text-start text-dark">Más valoradas<span
-                            style="color: #F1B20A;">.</span></h2>
+                                style="color: #F1B20A;">.</span></h2>
 
-                            <div class="my-4 position-relative">
-                                <div class="most_valued">
-                                    <div class="col-sm-auto pb-5">
-                                        <div class="card border-0 rounded-4 p-2" style="width: 18rem;">
-                                            <div class="position-relative img-card">
-                                                <img src="img/home-modelo-western.jpg" class="card-img-top" alt="...">
-                                                <p class="score bg-dark rounded-pill text-white position-absolute px-3"><img class="me-1" src="img/star.svg" alt="">4,6</p>
-                                            </div>
-                                            <div class="card-body">
-                                                <h5 class="card-title fw-700">Modelo western</h5>
-                                                <p class="card-text">Boda</p>
-                                            </div>
+                        <div class="my-4 position-relative">
+                            <div class="most_valued">
+                                <div class="col-sm-auto pb-5">
+                                    <div class="card border-0 rounded-4 p-2" style="width: 18rem;">
+                                        <div class="position-relative img-card">
+                                            <img src="img/home-modelo-western.jpg" class="card-img-top" alt="...">
+                                            <p class="score bg-dark rounded-pill text-white position-absolute px-3"><img
+                                                    class="me-1" src="img/star.svg" alt="">4,6</p>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-700">Modelo western</h5>
+                                            <p class="card-text">Boda</p>
                                         </div>
                                     </div>
-                                    <div class="col-sm-auto pb-5">
-                                        <div class="card border-0 rounded-4 p-2" style="width: 18rem;">
-                                            <div class="position-relative img-card">
-                                                <img src="img/home-modelo-diva.jpg" class="card-img-top" alt="...">
-                                                <p class="score bg-dark rounded-pill text-white position-absolute px-3"><img class="me-1" src="img/star.svg" alt="">4,6</p>
-                                            </div>
-                                            <div class="card-body">
-                                                <h5 class="card-title fw-700">Modelo Diva</h5>
-                                                <p class="card-text">Cumpleaños</p>
-                                            </div>
+                                </div>
+                                <div class="col-sm-auto pb-5">
+                                    <div class="card border-0 rounded-4 p-2" style="width: 18rem;">
+                                        <div class="position-relative img-card">
+                                            <img src="img/home-modelo-diva.jpg" class="card-img-top" alt="...">
+                                            <p class="score bg-dark rounded-pill text-white position-absolute px-3"><img
+                                                    class="me-1" src="img/star.svg" alt="">4,6</p>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-700">Modelo Diva</h5>
+                                            <p class="card-text">Cumpleaños</p>
                                         </div>
                                     </div>
-                                    <div class="col-sm-auto pb-5">
-                                        <div class="card border-0 rounded-4 p-2" style="width: 18rem;">
-                                            <div class="position-relative img-card">
-                                                <img src="img/home-modelo-western.jpg" class="card-img-top" alt="...">
-                                                <p class="score bg-dark rounded-pill text-white position-absolute px-3"><img class="me-1" src="img/star.svg" alt="">4,6</p>
-                                            </div>
-                                            <div class="card-body">
-                                                <h5 class="card-title fw-700">Modelo western</h5>
-                                                <p class="card-text">Boda</p>
-                                            </div>
+                                </div>
+                                <div class="col-sm-auto pb-5">
+                                    <div class="card border-0 rounded-4 p-2" style="width: 18rem;">
+                                        <div class="position-relative img-card">
+                                            <img src="img/home-modelo-western.jpg" class="card-img-top" alt="...">
+                                            <p class="score bg-dark rounded-pill text-white position-absolute px-3"><img
+                                                    class="me-1" src="img/star.svg" alt="">4,6</p>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-700">Modelo western</h5>
+                                            <p class="card-text">Boda</p>
                                         </div>
                                     </div>
-                                    <div class="col-sm-auto pb-5">
-                                        <div class="card border-0 rounded-4 p-2" style="width: 18rem;">
-                                            <div class="position-relative img-card">
-                                                <img src="img/home-modelo-diva.jpg" class="card-img-top" alt="...">
-                                                <p class="score bg-dark rounded-pill text-white position-absolute px-3"><img class="me-1" src="img/star.svg" alt="">4,6</p>
-                                            </div>
-                                            <div class="card-body">
-                                                <h5 class="card-title fw-700">Modelo Diva</h5>
-                                                <p class="card-text">Cumpleaños</p>
-                                            </div>
+                                </div>
+                                <div class="col-sm-auto pb-5">
+                                    <div class="card border-0 rounded-4 p-2" style="width: 18rem;">
+                                        <div class="position-relative img-card">
+                                            <img src="img/home-modelo-diva.jpg" class="card-img-top" alt="...">
+                                            <p class="score bg-dark rounded-pill text-white position-absolute px-3"><img
+                                                    class="me-1" src="img/star.svg" alt="">4,6</p>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-700">Modelo Diva</h5>
+                                            <p class="card-text">Cumpleaños</p>
                                         </div>
                                     </div>
-                                    <div class="col-sm-auto pb-5">
-                                        <div class="card border-0 rounded-4 p-2" style="width: 18rem;">
-                                            <div class="position-relative img-card">
-                                                <img src="img/home-modelo-western.jpg" class="card-img-top" alt="...">
-                                                <p class="score bg-dark rounded-pill text-white position-absolute px-3"><img class="me-1" src="img/star.svg" alt="">4,6</p>
-                                            </div>
-                                            <div class="card-body">
-                                                <h5 class="card-title fw-700">Modelo western</h5>
-                                                <p class="card-text">Boda</p>
-                                            </div>
+                                </div>
+                                <div class="col-sm-auto pb-5">
+                                    <div class="card border-0 rounded-4 p-2" style="width: 18rem;">
+                                        <div class="position-relative img-card">
+                                            <img src="img/home-modelo-western.jpg" class="card-img-top" alt="...">
+                                            <p class="score bg-dark rounded-pill text-white position-absolute px-3"><img
+                                                    class="me-1" src="img/star.svg" alt="">4,6</p>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-700">Modelo western</h5>
+                                            <p class="card-text">Boda</p>
                                         </div>
                                     </div>
-                                    <div class="col-sm-auto pb-5">
-                                        <div class="card border-0 rounded-4 p-2" style="width: 18rem;">
-                                            <div class="position-relative img-card">
-                                                <img src="img/home-modelo-western.jpg" class="card-img-top" alt="...">
-                                                <p class="score bg-dark rounded-pill text-white position-absolute px-3"><img class="me-1" src="img/star.svg" alt="">4,6</p>
-                                            </div>
-                                            <div class="card-body">
-                                                <h5 class="card-title fw-700">Modelo western</h5>
-                                                <p class="card-text">Boda</p>
-                                            </div>
+                                </div>
+                                <div class="col-sm-auto pb-5">
+                                    <div class="card border-0 rounded-4 p-2" style="width: 18rem;">
+                                        <div class="position-relative img-card">
+                                            <img src="img/home-modelo-western.jpg" class="card-img-top" alt="...">
+                                            <p class="score bg-dark rounded-pill text-white position-absolute px-3"><img
+                                                    class="me-1" src="img/star.svg" alt="">4,6</p>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-700">Modelo western</h5>
+                                            <p class="card-text">Boda</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                        </div>
 
                     </div>
                 </div>
@@ -308,8 +415,9 @@
                     <div class="py-3">
                         <div class="d-flex justify-content-between align-items-center">
                             <h2 class="fs-sm-24 mb-0 fs-21 fw-bold text-start text-dark">Mis invitaciones<span
-                                style="color: #F1B20A;">.</span></h2>
-                            <a href="#" class="text-decoration-underline text-dark btn-underline">ver todas mis invitaciones</a>
+                                    style="color: #F1B20A;">.</span></h2>
+                            <a href="#" class="text-decoration-underline text-dark btn-underline">ver todas mis
+                                invitaciones</a>
                         </div>
                     </div>
                 </div>
@@ -322,15 +430,46 @@
 
 
 
-
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <!-- Incluir JS de Splide -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.0.9/dist/js/splide.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+
+
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function () {
+            var main = new Splide('#main-carousel', {
+                type: 'fade',
+                rewind: true,
+                pagination: false,
+                arrows: false,
+            });
+
+            var thumbnails = new Splide('#thumbnail-carousel', {
+                fixedWidth: 100,
+                gap: 10,
+                rewind: false,
+                pagination: false,
+                isNavigation: false,
+                arrows: false,
+                breakpoints: {
+                    600: {
+                        fixedWidth: 60,
+                    },
+
+                },
+            });
+
+            main.sync(thumbnails);
+            main.mount();
+            thumbnails.mount();
+        });
+    </script>
 
     <script>
         if ($('.models_slider').length > 0) {
@@ -352,14 +491,14 @@
                     1000: {
                         items: 3
                     },
-                    1400:{
+                    1400: {
                         items: 5
                     }
                 }
             });
         }
 
-        if ( $('.most_valued').length > 0 ) {
+        if ($('.most_valued').length > 0) {
             var slider2 = tns({
                 container: '.most_valued',
                 items: 1,
@@ -378,7 +517,7 @@
                     1000: {
                         items: 3
                     },
-                    1400:{
+                    1400: {
                         items: 5
                     }
                 }
