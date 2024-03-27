@@ -384,15 +384,51 @@ body {
 }
 
 .splide__thumbnails .splide__slide img {
-    width: 100px;
+    width: 150px;
     /* Ancho personalizado de miniaturas */
     height: auto;
     /* Altura automática */
-    border: 1px solid #ccc;
     border-radius: 5px;
 }
 
+.splide__arrow{
+    background-color: white;
+}
+
 /* END INTERNA MODELO */
+
+@media screen and (max-width: 1340px){
+    .info-product{
+        display: grid;
+    }
+    .info-product .col-sm-2{
+        width: 100%;
+        grid-row-start: 2;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    .info-product .col-sm-2 .splide__list {
+        flex-direction: row !important;
+        gap: 0px!important;
+    }
+    .info-product .splide__thumbnails .splide__slide img{
+        width: 100%;
+    }
+
+    .info-product .description{
+        width: 100%;
+    }
+    .info-product .col-sm-5{
+        width: 100%;
+    }
+    .info-product .col-sm-5 .splide__slide img{
+        width: auto!important;
+    }
+    .info-product .splide__slide{
+        display: flex;
+        justify-content: center;
+    }
+}
 
 @media screen and (max-width: 1200px) {
     #plans .row {
@@ -407,6 +443,12 @@ body {
 
     #plans button.btn {
         width: auto !important;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .card{
+        width: 100%!important;
     }
 }
 
@@ -500,6 +542,36 @@ body {
 
     #plans .collapsed .arrow-white {
         transform: rotate(0deg);
+    }
+    #thumbnail-carousel{
+        display: none;
+    }
+    .info-product .col-sm-5{
+        padding: 0px;
+        position: absolute;
+        top: 0px;
+    }
+    .info-product .template-details .model{
+        background-color: transparent!important;
+    }
+    .info-product{
+        display: block;
+    }
+    .info-product .model-preview{
+        padding-top: 170px!important;
+        margin-top: 170px;
+        z-index: 2;
+    }
+    .info-product .col-sm-5::before{
+        display: block;
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(255, 255, 255, 0.1) 120%);
+        z-index: 1;
     }
 }
 
