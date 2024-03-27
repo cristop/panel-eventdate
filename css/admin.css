@@ -395,6 +395,12 @@ body {
     background-color: white;
 }
 
+.start {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 /* END INTERNA MODELO */
 
 @media screen and (max-width: 1340px){
@@ -576,6 +582,10 @@ body {
 
     .most-valued .card{
         width: auto!important;
+    }
+
+    .start{
+        background-position: center left;
     }
 
     /* carousel home */
