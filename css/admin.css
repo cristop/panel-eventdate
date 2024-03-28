@@ -395,7 +395,6 @@ body {
 .start {
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .sidebar .subtitle{
@@ -590,10 +589,6 @@ body {
 
     .most-valued .card{
         width: auto!important;
-    }
-
-    .start{
-        background-position: center left;
     }
 
     /* carousel home */
@@ -826,6 +821,11 @@ body {
 
     .panel .column-right{
         display: none;
+    }
+
+    .start.d-block .container{
+        margin-bottom: 150px !important;
+        padding-bottom: 150px;
     }
 
 }
