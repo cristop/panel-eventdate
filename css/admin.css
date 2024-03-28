@@ -770,6 +770,11 @@ body {
         position: relative;
         z-index: 2;
         color: white;
+        padding-top: 40px;
+    }
+
+    #modalIdShare .modal-body .text{
+        padding-top: 50px;
     }
 
 }
