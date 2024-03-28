@@ -824,4 +824,8 @@ body {
         color: #000!important;
     }
 
+    .panel .column-right{
+        display: none;
+    }
+
 }
