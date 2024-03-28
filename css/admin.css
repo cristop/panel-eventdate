@@ -599,7 +599,15 @@ body {
     }
 }
 
+.individual-invitation-mobile .slide-models  {
+    width: 100%!important;
+    transition-duration: 0.1s;
+}
 
+.individual-invitation-mobile .bg-primary{
+    width: 60px;
+    height: 60px;
+}
 /* END PANEL HOME */
 
 @media screen and (max-width: 900px) {
