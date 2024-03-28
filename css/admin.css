@@ -750,4 +750,26 @@ body {
         transform: rotate(0deg);
     }
 
+    /* modal share */
+
+    #modalIdShare .forma::after{
+        content: "";
+        display: block;
+        background-color: #212121;
+        width: 100%;
+        height: 200px;
+        position: absolute;
+        left: 0;
+        top: -46px;
+        border-radius: 50%;
+        transform: scale(1.2);
+        z-index: 1;
+    }
+    
+    #modalIdShare h2{
+        position: relative;
+        z-index: 2;
+        color: white;
+    }
+
 }
