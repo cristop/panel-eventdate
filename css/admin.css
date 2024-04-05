@@ -407,7 +407,7 @@ body {
 }
 
 .individual-invitation .row .bg-primary:hover{
-    outline: 8px solid #629990;
+    outline: 5px solid #629990;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
