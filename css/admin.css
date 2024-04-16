@@ -206,7 +206,7 @@ body {
     right: 0;
 }
 
-.tns-controls [data-controls="next"]{
+.container-slides .tns-controls [data-controls="next"]{
     background-image: url('/img/arrow-slide.svg');
     z-index: 1;
     right: 0;
@@ -239,7 +239,7 @@ body {
         0 5px 15px 0 rgba(37, 44, 97, 0.15);
 }
 
-.wedding .btn-underline:hover {
+.wedding .btn-underline:hover, .invitation .btn-underline:hover {
     opacity: 0.7;
 }
 
