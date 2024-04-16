@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="70" height="70" viewBox="0 0 70 70">
+  <defs>
+    <filter id="Elipse_6" x="0" y="0" width="70" height="70" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feFlood flood-opacity="0.278"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Componente_55_5" data-name="Componente 55 – 5" transform="translate(12 12)">
+    <g transform="matrix(1, 0, 0, 1, -12, -12)" filter="url(#Elipse_6)">
+      <circle id="Elipse_6-2" data-name="Elipse 6" cx="23" cy="23" r="23" transform="translate(12 12)" fill="#fff"/>
+    </g>
+    <path id="Icon_ion-ios-arrow-down" data-name="Icon ion-ios-arrow-down" d="M7.5,5.991,13.175.315a1.067,1.067,0,0,1,1.514,0,1.081,1.081,0,0,1,0,1.518L8.262,8.264A1.07,1.07,0,0,1,6.784,8.3L.313,1.838A1.072,1.072,0,0,1,1.827.319Z" transform="translate(19 31) rotate(-90)" fill="#8e8e8e"/>
+  </g>
+</svg>
