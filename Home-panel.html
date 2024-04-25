@@ -707,6 +707,97 @@
                     </div>
                 </div>
 
+                <div class="interna-options">
+                    <div class="py-3">
+                        <h2 class="fs-sm-24 mb-0 py-2 fs-21 fw-bold text-start text-dark">Otras opciones que te pueden gustar<span
+                                style="color: #F1B20A;">.</span></h2>
+
+                        <div class="my-4 container-slides position-relative">
+                            <div class="other_options_slide">
+                                <div class="col-sm-auto pb-5">
+                                    <div class="card border-0 rounded-4 p-2">
+                                        <div class="position-relative img-card">
+                                            <img src="img/home-modelo-western.jpg" class="card-img-top" alt="...">
+                                            <p class="score bg-dark rounded-pill text-white position-absolute px-3"><img
+                                                    class="me-1" src="img/star.svg" alt="">4,6</p>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-700 fs-sm-16">Modelo western</h5>
+                                            <p class="card-text fs-sm-13">Etiqueta 1, Etiqueta 2</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-auto pb-5">
+                                    <div class="card border-0 rounded-4 p-2">
+                                        <div class="position-relative img-card">
+                                            <img src="img/home-modelo-diva.jpg" class="card-img-top" alt="...">
+                                            <p class="score bg-dark rounded-pill text-white position-absolute px-3"><img
+                                                    class="me-1" src="img/star.svg" alt="">4,6</p>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-700 fs-sm-16">Modelo Diva</h5>
+                                            <p class="card-text fs-sm-13">Etiqueta 1, Etiqueta 2</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-auto pb-5">
+                                    <div class="card border-0 rounded-4 p-2">
+                                        <div class="position-relative img-card">
+                                            <img src="img/home-modelo-western.jpg" class="card-img-top" alt="...">
+                                            <p class="score bg-dark rounded-pill text-white position-absolute px-3"><img
+                                                    class="me-1" src="img/star.svg" alt="">4,6</p>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-700 fs-sm-16">Modelo western</h5>
+                                            <p class="card-text fs-sm-13">Etiqueta 1, Etiqueta 2</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-auto pb-5">
+                                    <div class="card border-0 rounded-4 p-2">
+                                        <div class="position-relative img-card">
+                                            <img src="img/home-modelo-diva.jpg" class="card-img-top" alt="...">
+                                            <p class="score bg-dark rounded-pill text-white position-absolute px-3"><img
+                                                    class="me-1" src="img/star.svg" alt="">4,6</p>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-700 fs-sm-16">Modelo Diva</h5>
+                                            <p class="card-text fs-sm-13">Etiqueta 1, Etiqueta 2</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-auto pb-5">
+                                    <div class="card border-0 rounded-4 p-2">
+                                        <div class="position-relative img-card">
+                                            <img src="img/home-modelo-western.jpg" class="card-img-top" alt="...">
+                                            <p class="score bg-dark rounded-pill text-white position-absolute px-3"><img
+                                                    class="me-1" src="img/star.svg" alt="">4,6</p>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-700 fs-sm-16">Modelo western</h5>
+                                            <p class="card-text fs-sm-13">Etiqueta 1, Etiqueta 2</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-auto pb-5">
+                                    <div class="card border-0 rounded-4 p-2">
+                                        <div class="position-relative img-card">
+                                            <img src="img/home-modelo-western.jpg" class="card-img-top" alt="...">
+                                            <p class="score bg-dark rounded-pill text-white position-absolute px-3"><img
+                                                    class="me-1" src="img/star.svg" alt="">4,6</p>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-700 fs-sm-16">Modelo western</h5>
+                                            <p class="card-text fs-sm-13">Etiqueta 1, Etiqueta 2</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
                 <div class="invitationes">
                     <div class="py-3">
                         <div class="d-flex justify-content-between align-items-center">
@@ -788,8 +879,35 @@
             });
         }
 
+        if ($('.other_options_slide').length > 0) {
+            var slider2 = tns({
+                container: '.other_options_slide',
+                items: 1,
+                gutter: 30,
+                controlsText: ['', ''],
+                nav: false,
+                autoplayButtonOutput: false,
+                mouseDrag: true,
+                slideBy: 1,
+                autoplay: false,
+                items: 1,
+                responsive: {
+                    640: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 3
+                    },
+                    1400: {
+                        items: 5
+                    }
+                }
+            });
+        }
+
 
     </script>
 </body>
 
 </html>
+

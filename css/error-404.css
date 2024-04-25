@@ -1,0 +1,18 @@
+#spot{
+    background-repeat: no-repeat;
+    background-position: center;
+    align-items: start;
+}
+#spot .container > div{
+    text-align: center;
+}
+#spot .container > div h2{
+    font-weight: 800;
+    font-size: 40px;
+}
+#spot .container > div button{
+    padding: 13px 25px;
+    border-radius: 50px;
+    font-size: 20px;
+    margin-top: 25px;
+}
